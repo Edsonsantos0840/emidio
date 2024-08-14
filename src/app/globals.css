@@ -3,10 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --corFundo: #fff;
+  --corFundo2: #ffffff00;
+  --primeira-cor: #1C5931;
+  --corLetra: #124020;
+  --corLetra2: #9acd32;
+  --fundoBotao: #dbefc8;
+  --fundoCard2: rgba(167, 234, 35, .412);
+  --fundoCard1: #e5e7eb;
+  --corSombra: #1240229c;
+  --terceira-cor: yellowgreen;
+  --letra1-cor: rgb(170, 255, 0);
+  --letra-cor: #cbffdd;
+  --letra3-cor: #369927;
+  --letra2-cor: #9BBFAB;
+  --letra4-cor: #5E8C72;
+
+  --font1: 'Caveat', cursive;
+  --font2: fantasy;
+  --font3: Arial, Helvetica, sans-serif;
+  
+  
+  }
+  *{
+    font-family: 'Caveat', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
 @media (prefers-color-scheme: dark) {
   :root {
