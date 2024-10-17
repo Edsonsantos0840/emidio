@@ -10,9 +10,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-16">
       <CardHead image={ima} testo="Saúde do corpo e da mente." descrição="Determinação e satisfação em oferecer o melhor para nossos paciêntes." muda="hidden" tamanho={'md:w-[76%] lg:w-[58%] xl:w-[50%]'}/>
-      <h3 className=" py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">______________Áreas que Trabalhamos.______________</h3>
-      <section className="flex justify-between items-center px-5 w-full ">
-        <div className="flex w-full " >
+      <h3 className="md:hidden py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">Áreas que Trabalhamos.</h3>
+      <h3 className="hidden md:block py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">______________Áreas que Trabalhamos.______________</h3>
+      <section className="md:flex justify-between items-center md:px-5 w-full ">
+        <div className="md:flex w-full " >
           <CardEspecifico
             imagem="/image/fibromialgia.png" 
             titulo="Dores no corpo. " 
@@ -43,8 +44,8 @@ export default function Home() {
             agenda="Agende um Horário" />
         </div>
       </section>
-      <section className="flex justify-between items-center px-5 w-full ">
-        <div className="flex w-full " >
+      <section className="md:flex justify-between items-center md:px-5 w-full ">
+        <div className="md:flex w-full " >
           <CardEspecifico
             imagem="/image/Recuperação de Lesões 2.png" 
             titulo="Recuperação de Lesões" 
@@ -75,8 +76,8 @@ export default function Home() {
             agenda="Agende um Horário" />
         </div>
       </section>
-      <section className="flex justify-between items-center px-5 w-full ">
-        <div className="flex w-full " >
+      <section className="md:flex justify-between items-center md:px-5 w-full ">
+        <div className="md:flex w-full " >
           <CardEspecifico
             imagem="/image/Circulação Sanguínea.png" 
             titulo="Problemas de circulação sanguínea " 
@@ -107,8 +108,8 @@ export default function Home() {
             agenda="Agende um Horário" />
         </div>
       </section>
-      <section className="flex justify-between items-center px-5 w-full ">
-        <div className="flex w-full " >
+      <section className="md:flex justify-between items-center md:px-5 w-full ">
+        <div className="md:flex w-full " >
           <CardEspecifico
             imagem="/image/desenvolvimento Pessoal.png" 
             titulo="Crescimento pessoal" 
@@ -123,7 +124,7 @@ export default function Home() {
             artigo9="Zona de Conforto." 
             artigo10="Crenças Limitantes. " 
             agenda="Agende um Horário" />
-            <div className="p-8 bg-[var(--fundoCard2)] w-[50%] rounded-md shadow-md">
+            <div className=" p-4 md:p-8 bg-[var(--fundoCard2)] md:w-[50%] rounded-md shadow-md">
             <h2 className="text-[var(--corLetra2)] text-xl" >Você sofre desses males? Podemos te ajudar.</h2>
             <p>Tanto a massoterapia quanto a psicologia são recursos valiosos para cuidarmos de nós mesmos de maneira integral. Enquanto a massoterapia foca no relaxamento físico, a psicologia nos auxilia a compreender e lidar com as complexidades da mente. Ao explorar esses espaços, estamos investindo em nosso próprio bem-estar, buscando equilíbrio e qualidade de vida. Lembre-se de que cada indivíduo é único, então encontrar a combinação certa de práticas que funcionem para você é essencial. Obrigado por me ouvirem e lembrem-se de cuidar tanto do corpo quanto da mente!</p>
 
