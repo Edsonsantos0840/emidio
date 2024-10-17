@@ -72,23 +72,23 @@ export default function Contato() {
   }
 
   return (
-    <div className="min-h-screen w-full custom-gradient py-10 flex justify-center items-center ">
+    <div className="min-h-screen w-full custom-gradient py-10 md:flex justify-center items-center ">
       {/* Header & Logo Section */}
-      <div className=" mx-auto  p-8   flex flex-col items-center pt-14 body ">
+      <div className=" mx-auto  p-8   flex flex-col items-center md:pt-14 body ">
         <Link href={'/'} passHref>
-          <Image src={logo} alt="logo" width={250} height={250} className="mb-4" />
+          <Image src={logo} alt="logo" width={200} height={200} className="md:mb-4 md:w-[250px] " />
         </Link>
-        <h1 className="text-5xl font-bold  mb-4 mt-[-60px]">Espaço <span className="text-[var(--corLetra2)]">Emídio & Sá</span></h1>
+        <h1 className=" text-3xl md:text-5xl font-bold  mb-4 mt-[-60px]">Espaço <span className="text-[var(--corLetra2)]">Emídio & Sá</span></h1>
         <div className="flex space-x-4 mb-8">
-          <Link href="https://www.facebook.com" target="_blank"><BsFacebook className="hover:scale-150 text-4xl text-blue-600 hover:text-blue-800" /></Link>
-          <Link href="https://www.instagram.com" target="_blank"><BsInstagram className="hover:scale-150 text-4xl text-pink-500 hover:text-pink-700" /></Link>
-          <Link href="https://wa.me/5519991062455" target="_blank"><BsWhatsapp className="hover:scale-150 text-4xl text-green-500 hover:text-green-700" /></Link>
-          <Link href="/" target="_blank"><FaLinkedin className="hover:scale-150 text-4xl text-blue-800 hover:text-blue-900" /></Link>
+          <Link href="https://www.facebook.com" target="_blank"><BsFacebook className="hover:scale-150 text-3xl md:text-4xl text-blue-600 hover:text-blue-800" /></Link>
+          <Link href="https://www.instagram.com" target="_blank"><BsInstagram className="hover:scale-150 text-3xl md:text-4xl text-pink-500 hover:text-pink-700" /></Link>
+          <Link href="https://wa.me/5519991062455" target="_blank"><BsWhatsapp className="hover:scale-150 text-3xl md:text-4xl text-green-500 hover:text-green-700" /></Link>
+          <Link href="/" target="_blank"><FaLinkedin className="hover:scale-150 text-3xl md:text-4xl text-blue-800 hover:text-blue-900" /></Link>
         </div>
       </div>
 
       {/* Form Section */}
-      <form onSubmit={captura} className="max-w-6xl mx-auto bg-white p-5 mt-16 rounded-xl shadow-lg space-y-3">
+      <form onSubmit={captura} className="max-w-6xl mx-auto bg-white p-5 md:mt-16 rounded-xl shadow-lg space-y-3">
         <h2 className="text-3xl font-semibold text-gray-700 text-center">Agende um Horário</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Nome */}
@@ -124,11 +124,11 @@ export default function Contato() {
           </label>
 
           {/* Especialidade */}
-          <label className="flex flex-col">
+          <label className="flex flex-col ">
             <div className="flex items-center space-x-2">
               <FaMedkit className="text-[var(--corLetra2)]" /><span className="text-gray-700">*Especialidade:</span>
             </div>
-            <select className="border-gray-300 border  text-center rounded-md" value={esp} onChange={(e) => setEsp(e.target.value)}>
+            <select className="border-gray-300 border w-[80%] text-sm text-center rounded-md" value={esp} onChange={(e) => setEsp(e.target.value)}>
               <option value="">--------Selecione--------</option>
               <option value="Massoterapia">Massoterapia</option>
               <option value="Psicologia">Psicologia</option>
