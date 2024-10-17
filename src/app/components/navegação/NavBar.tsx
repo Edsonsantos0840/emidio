@@ -18,7 +18,7 @@ function NavBar() {
               <h2 className="text-[1.6rem] md:text-[1.5rem] lg:text-3xl text-[var(--corLetra2)] text-center">
                 Emídio & Sá
               </h2>
-              <p className="text-[.6rem] lg:text-xs text-[var(--corLetra2)]">
+              <p className="text-[.6rem] lg:text-xs text-[var(--primeira-cor)] md:text-[var(--corLetra2)]">
                 CUIDANDO DE SUA SAÚDE
               </p>
             </div>
