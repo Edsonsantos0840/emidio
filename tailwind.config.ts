@@ -1,3 +1,5 @@
+
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,10 +10,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        'principal': '#9acd32',
+        'letra': '#dbefc8',
+        'corSombra': '#1240229c',
+        'corLetra': '#124020',
+        'corEspecial': '#aaff00',
+        '': '',
+        '': '',
+        '': '',
+      },
+      fontFamily: {
+        fontPrincipal: ['Caveat','cursive'],
+        segundaFont: ['fantasy'],
+        terceiraFont: ['Arial','Helvetica', 'sans-serif'],
+
       },
     },
   },

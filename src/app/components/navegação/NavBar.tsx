@@ -5,9 +5,9 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 function NavBar() {
   return (
-    <nav className="flex justify-between md:items-center w-[100vw] h-[90px] md:h-[115px] fixed">
+    <nav className="flex justify-between md:items-center w-[100vw] h-[90px] md:h-[115px] lg:h-[93px]  fixed z-20 bg-[var(--corFundo)] shadow-lg ">
        
-      <div className="flex w-full items-center ml-16 md:ml-0 ">
+      <div className="flex w-full items-center ml-16 md:ml-0  ">
         <div className="flex w-full items-center">
           <div className="w-[100px] h-[100px] md:w-[130px] md:h-[130px] p-1 ">
             <Image src={logo} alt="Logo" width={250} height={250} />
@@ -30,10 +30,10 @@ function NavBar() {
             <div className="hidden group-hover:block md:w-full md:flex  md:gap-2  bg-[var(--corSombra)] md:bg-[var(--corFundo2)] absolute md:relative left-0 top-[91px] md:top-0 md:left-[20.4rem] lg:left-[29.5rem]">
               <div className="flex flex-col md:flex-row text-[var(--corFundo)] md:text-[var(--corLetra)] p-2  md:gap-2 lg:gap-8 font-[var(--font1)]">
                 <Link href={"/"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Início</Link>
-                <Link href={"/"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Massoterapia</Link>
-                <Link href={"/"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Pisicologia</Link>
-                <Link href={"/"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Sobre Nós</Link>
-                <Link href={"/"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Contato</Link>
+                <Link href={"/massoterapia"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Massoterapia</Link>
+                <Link href={"/pisicologia"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Pisicologia</Link>
+                <Link href={"/sobre"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Sobre Nós</Link>
+                <Link href={"/contato"} className="hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)] " >Contato</Link>
               </div>
             </div>
           </div>
