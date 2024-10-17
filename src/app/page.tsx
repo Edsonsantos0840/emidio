@@ -125,7 +125,7 @@ export default function Home() {
             artigo10="Crenças Limitantes. " 
             agenda="Agende um Horário" />
             <div className=" p-4 md:p-8 bg-[var(--fundoCard2)] md:w-[50%] rounded-md shadow-md">
-            <h2 className="text-[var(--corLetra2)] text-xl" >Você sofre desses males? Podemos te ajudar.</h2>
+            <h2 className="text-[var(--corLetra2)] text-xl text-center" >Você sofre desses males? Podemos te ajudar.</h2>
             <p>Tanto a massoterapia quanto a psicologia são recursos valiosos para cuidarmos de nós mesmos de maneira integral. Enquanto a massoterapia foca no relaxamento físico, a psicologia nos auxilia a compreender e lidar com as complexidades da mente. Ao explorar esses espaços, estamos investindo em nosso próprio bem-estar, buscando equilíbrio e qualidade de vida. Lembre-se de que cada indivíduo é único, então encontrar a combinação certa de práticas que funcionem para você é essencial. Obrigado por me ouvirem e lembrem-se de cuidar tanto do corpo quanto da mente!</p>
 
             </div>

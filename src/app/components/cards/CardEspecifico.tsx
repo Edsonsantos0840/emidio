@@ -23,7 +23,7 @@ export default function CardEspecifico(props: CardEspecificoProps) {
         <Image src={props.imagem} alt="imagem" width={400} height={400} className="shadow-lg"/>
       </div>
       <article className=" pt-2 hidden group-hover:flex flex-col justify-center items-center gap-2 m-auto">
-        <h2 className="text-[var(--corLetra2)] text-xl" >{props.titulo}</h2>
+        <h2 className="text-[var(--corLetra2)] text-xl text-center" >{props.titulo}</h2>
           <ul className="text-md">
             <li className="font-terceiraFont list-disc text-md">{props.artigo1}</li>
             <li className="font-terceiraFont list-disc text-md">{props.artigo2}</li>
