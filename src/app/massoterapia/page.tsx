@@ -13,7 +13,7 @@ function Massoterapia() {
         muda={"md:block"}
         tamanho={"md:w-[160%] lg:w-[67%] xl:w-[50%]"}
       />
-      <section className="m-auto w-[60%] py-8">
+      <section className="m-auto w-[90%] md:w-[60%] p-1 py-8">
         <h2 className="text-[var(--corLetra2)] text-2xl text-center">
           Afinal, o que é a Massoterapia?
         </h2>
@@ -25,11 +25,11 @@ function Massoterapia() {
           aumento da flexibilidade.
         </p>
       </section>
-      <section className="p-8 bg-[var(--fundoCard2)] w-[80%] rounded-md shadow-md  group cursor-pointer ">
+      <section className="p-1 md:p-8 bg-[var(--fundoCard2)] w-[90%] md:w-[80%] rounded-md shadow-md  group cursor-pointer ">
         <h2 className="text-[var(--corLetra2)] text-2xl text-center  ">
           Modalidades
         </h2>
-        <p className="hidden group-hover:block group-hover:ease-in group-hover:duration-700 w-[60%] m-auto ">
+        <p className="hidden group-hover:block group-hover:ease-in group-hover:duration-700 w-[90%] md:w-[60%] m-auto ">
           Existem diversas abordagens e técnicas dentro da massoterapia, cada
           uma com suas características e objetivos específicos. Algumas das
           técnicas mais comuns incluem :
@@ -64,7 +64,7 @@ function Massoterapia() {
           equilibrar os doshas (energias) do corpo.
         </p>
 
-        <p className="py-6 w-[60%] m-auto hidden group-hover:block group-hover:ease-in group-hover:duration-700">
+        <p className="py-6 w-[90%] md:w-[60%] m-auto hidden group-hover:block group-hover:ease-in group-hover:duration-700">
           É importante ressaltar que a massoterapia não é uma substituição para
           cuidados médicos. Se você tem condições médicas específicas ou está
           lidando com problemas de saúde, é sempre recomendado consultar um

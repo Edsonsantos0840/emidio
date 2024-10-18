@@ -80,9 +80,9 @@ export default function Contato() {
         </Link>
         <h1 className=" text-3xl md:text-5xl font-bold  mb-4 mt-[-60px]">Espaço <span className="text-[var(--corLetra2)]">Emídio & Sá</span></h1>
         <div className="flex space-x-4 mb-8">
-          <Link href="https://www.facebook.com" target="_blank"><BsFacebook className="hover:scale-150 text-3xl md:text-4xl text-blue-600 hover:text-blue-800" /></Link>
-          <Link href="https://www.instagram.com" target="_blank"><BsInstagram className="hover:scale-150 text-3xl md:text-4xl text-pink-500 hover:text-pink-700" /></Link>
-          <Link href="https://wa.me/5519991062455" target="_blank"><BsWhatsapp className="hover:scale-150 text-3xl md:text-4xl text-green-500 hover:text-green-700" /></Link>
+          <Link href="https://www.facebook.com/profile.php?id=100095584324495&mibextid=LQQJ4d" target="_blank"><BsFacebook className="hover:scale-150 text-3xl md:text-4xl text-blue-600 hover:text-blue-800" /></Link>
+          <Link href="https://www.instagram.com/espaco_emidiosa.sx/" target="_blank"><BsInstagram className="hover:scale-150 text-3xl md:text-4xl text-pink-500 hover:text-pink-700" /></Link>
+          <Link href="https://wa.me/5519991062455?text=Ol%C3%A1+visitei+seu+site%2C+quero+um+or%C3%A7amento." target="_blank"><BsWhatsapp className="hover:scale-150 text-3xl md:text-4xl text-green-500 hover:text-green-700" /></Link>
           <Link href="/" target="_blank"><FaLinkedin className="hover:scale-150 text-3xl md:text-4xl text-blue-800 hover:text-blue-900" /></Link>
         </div>
       </div>

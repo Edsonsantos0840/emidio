@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 interface CardEspecificoProps {
 imagem: string,
 titulo: string,
@@ -36,7 +37,7 @@ export default function CardEspecifico(props: CardEspecificoProps) {
             <li className="font-terceiraFont list-disc text-md">{props.artigo9}</li>
             <li className="font-terceiraFont list-disc text-md">{props.artigo10}</li>
           </ul>
-        <button className="m-auto bg-[var(--corLetra2)] p-2 md:p-3 text-[var(--corFundo)] rounded-md shadow-md hover:scale-105 hover:bg-[var(--terceira-cor)] w-[300px] md:w-full ease-in duration-300">{props.agenda}</button>
+        <Link href={'/contato'} className="m-auto bg-[var(--corLetra2)] p-2 md:p-3 text-[var(--corFundo)] rounded-md shadow-md hover:scale-105 hover:bg-[var(--terceira-cor)] w-[300px] md:w-full ease-in duration-300">{props.agenda}</Link>
       </article>
     </div>
   );

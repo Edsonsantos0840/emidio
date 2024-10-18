@@ -47,13 +47,13 @@ export default function CardHead(props: PropsCardHead) {
             {!props.botao && (
               <div className=" flex justify-center items-center gap-3 md:gap-14 pt-4 md:pt-4">
                 <Link
-                  href={"/"}
+                  href={"/contato"}
                   className="bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[26vw] w-[40vw] text-[.9rem] md:text-[1.1rem]  text-center font-semibold hover:scale-105 ease-in duration-300 "
                 >
                   Agende um horário
                 </Link>
                 <Link
-                  href={"/"}
+                  href={"/sobre"}
                   className="bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw]  md:w-[26vw] w-[40vw] text-[.9rem] md:text-[1.1rem] text-center font-semibold hover:scale-105 ease-in duration-300 "
                 >
                   Saiba mais..
