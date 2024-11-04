@@ -45,7 +45,7 @@ export default function CardEspecifico(props: CardEspecificoProps) {
         </ul>
         <Link
           href={"/contato"}
-          className="m-auto bg-[var(--corLetra2)] p-2 md:p-3 text-[var(--corFundo)] rounded-md shadow-md hover:scale-105 hover:bg-[var(--terceira-cor)] w-[300px] md:w-full ease-in duration-300"
+          className="m-auto bg-[var(--corLetra2)] p-2 md:p-3 text-center text-[var(--corFundo)] rounded-md shadow-md hover:scale-105 hover:bg-[var(--terceira-cor)] w-[300px] md:w-full ease-in duration-300"
         >
           {props.agenda}
         </Link>
