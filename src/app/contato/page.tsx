@@ -1,31 +1,13 @@
 'use client'
-// import CardHead from "../components/cards/CardHead"
-// import ima from '../../../public/image/1 copy.png'
+
 import logo from '../../../public/image/3.png'
-import fundo from '../../../public/image/1 copy.png'
-
-// function Contato() {
-//   return (
-//     <main className="flex min-h-screen flex-col items-center justify-center ">
-//     <CardHead image={ima} logo={logo}  botao formulário/>
-//     <div className="bg-principal font-terceiraFont" >
-         
-//     </div>
-//   </main>
-//   )
-// }
-
-// export default Contato
 
 import { BsCalendarDate, BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { FaLinkedin, FaPhoneAlt, FaUserAlt, FaEnvelope, FaCommentAlt, FaMedkit } from "react-icons/fa";
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import CardHead from '../components/cards/CardHead';
-// import Mensagem from '../../components/mensagem';
-// import logo from '../image/l1.png';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 export default function Contato() {
   const [nome, setNome] = useState('');
@@ -47,7 +29,7 @@ export default function Contato() {
     } else if (fone.length < 8) {
       setRecado('Digite pelo menos 8 números');
     } else {
-      setRecado('Cadastro enviado com sucesso!!!');
+      setRecado('Enviado com sucesso, entraremos em contato em breve!!!');
       const templateParams = {
         from_name: nome,
         email,
@@ -56,18 +38,18 @@ export default function Contato() {
         data: datas,
         message: mensagem
       };
-  //     emailjs.send("service_hu18d74", "template_ucy9zs2", templateParams, "ztQRtw8wb5D7bN5oO")
-  //       .then((res) => {
-  //         console.log("EMAIL ENVIADO COM SUCESSO", res.status, res.text);
-  //         setNome('');
-  //         setEmail('');
-  //         setFone('');
-  //         setEsp('');
-  //         setDatas('');
-  //         setMensagem('');
-  //       }, (err) => {
-  //         console.log("ERRO:", err);
-  //       });
+      emailjs.send("service_092zaue", "template_yrje0me", templateParams, "irOtK26YzqWiLtyD8")
+        .then((res) => {
+          console.log("EMAIL ENVIADO COM SUCESSO", res.status, res.text);
+          setNome('');
+          setEmail('');
+          setFone('');
+          setEsp('');
+          setDatas('');
+          setMensagem('');
+        }, (err) => {
+          console.log("ERRO:", err);
+        });
     }
   }
 
@@ -91,6 +73,9 @@ export default function Contato() {
       <form onSubmit={captura} className="max-w-6xl mx-auto bg-white p-5 md:mt-16 rounded-xl shadow-lg space-y-3">
         <h2 className="text-3xl font-semibold text-gray-700 text-center">Agende um Horário</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {
+            recado && <p>{recado}</p>
+          }
           {/* Nome */}
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
@@ -148,7 +133,7 @@ export default function Contato() {
         <button type="submit" className="w-full bg-[var(--corLetra2)] text-white py-2 rounded-md hover:bg-[var(--letra1-cor)] transition duration-300">Enviar</button>
         
         {/* Mensagem de Retorno */}
-        {recado && <p>foi</p> }
+       
       </form>
     </div>
   );

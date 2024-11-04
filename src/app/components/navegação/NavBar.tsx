@@ -10,12 +10,12 @@ function NavBar() {
       <div className="flex w-full items-center ml-16 md:ml-0  ">
         <div className="flex w-full items-center">
           <div className="w-[100px] h-[100px] md:w-[130px] md:h-[130px] p-1 ">
-            <Image src={logo} alt="Logo" width={250} height={250} />
+            <Image src={logo} alt="Logo" width={280} height={280} />
           </div>
           <div className="flex w-full  md:justify-start items-center gap-1 ">
-            <h1 className="text-[1.6rem] md:text-[1.6rem] lg:text-3xl self-baseline">Espaço</h1>
+            <h1 className="text-[1.8rem] md:text-[1.6rem] lg:text-3xl self-baseline">Espaço</h1>
             <div className="flex flex-col justify-end">
-              <h2 className="text-[1.6rem] md:text-[1.5rem] lg:text-3xl text-[var(--corLetra2)] text-center">
+              <h2 className="text-[1.7rem] md:text-[1.5rem] lg:text-3xl text-[var(--corLetra2)] text-center">
                 Emídio & Sá
               </h2>
               <p className="text-[.6rem] lg:text-xs text-[var(--primeira-cor)] md:text-[var(--corLetra2)]">

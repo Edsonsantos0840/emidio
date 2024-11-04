@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .bg-custom-gradient {
-     background-image: linear-gradient(to bottom, rgb(199 253 164 / 62%), rgb(211 255 181 / 71%), rgb(185 250 148 / 82%), rgb(165 255 117 / 97%));
-  }
-  .custom-gradient {
-     background-image: linear-gradient(to bottom, rgba(200, 253, 164, 0.199), rgba(211, 255, 181, 0.384), rgba(185, 250, 148, 0.397), rgba(165, 255, 117, 0.589));
-  }
-}
-
- 
-
-
 :root {
   --corFundo: #fff;
   --corFundo2: #ffffff00;
@@ -44,14 +32,6 @@
     box-sizing: border-box;
   }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -81,8 +61,29 @@ input, select, textarea{
   height: 30px;
   border-radius: 5px;
 }
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .bg-custom-gradient {
+    background-image: linear-gradient(to bottom, rgb(199 253 164 / 62%), rgb(211 255 181 / 71%), rgb(185 250 148 / 82%), rgb(165 255 117 / 97%));
+ }
+ .custom-gradient {
+    background-image: linear-gradient(to bottom, rgba(200, 253, 164, 0.199), rgba(211, 255, 181, 0.384), rgba(185, 250, 148, 0.397), rgba(165, 255, 117, 0.589));
+ }
+  .alinha {
+    @apply flex flex-col justify-between items-center
+  }
+  .alinha2 {
+    @apply flex justify-between items-center
+  }
+  .alinha3 {
+    @apply flex justify-center items-center
+  }
+  .alinha4 {
+    @apply flex flex-col justify-around items-center text-center
+  }
+  .alinha5 {
+    @apply flex justify-around items-center 
+  }
+  .alinha6 {
+    @apply flex flex-col justify-center items-center
   }
 }
