@@ -93,14 +93,14 @@ export default function Home() {
       <div className="lg:flex w-full">
           <CardEspecifico
             imagem="/image/Circulação Sanguínea.png"
-            titulo="Problemas de circulação sanguínea "
-            artigo1="Dor ou desconforto nas extremidades."
+            titulo="circulação sanguínea "
+            artigo1="Dor desconforto nas extremidades."
             artigo2="Pele pálida ou azulada. "
             artigo3="Inchaço. "
             artigo4="Formigamento ou dormência. "
             artigo5="Úlceras de pernas. "
             artigo6="Pernas cansadas ou pesadas. "
-            artigo7="ArtigDiminuição da temperatura nas extremidades. "
+            artigo7="Diminuição temperatura nas extremidades. "
             artigo8="Pulsação fraca. "
             artigo9="Dor no peito. "
             artigo10="Disfunção erétil. "
@@ -140,8 +140,8 @@ export default function Home() {
             artigo10="Crenças Limitantes. "
             agenda="Agende um Horário"
           />
-          <div className=" p-4 md:p-8 bg-[var(--fundoCard2)] lg:w-[50%] rounded-md shadow-md">
-            <h2 className="titulo respoFont">
+          <div className=" p-4 bg-[var(--fundoCard2)] lg:w-[50%] rounded-md shadow-md">
+            <h2 className="text-[var(--corLetra2)] text-lg md:text-[2.1rem] text-center respoFont">
               Você sofre desses males? Podemos te ajudar.
             </h2>
             <p className="respoFont md:text-[1.6rem]" >

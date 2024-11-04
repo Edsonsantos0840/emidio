@@ -31,7 +31,7 @@ export default function CardEspecifico(props: CardEspecificoProps) {
       </div>
       <article className=" pt-2 hidden group-hover:alinha6 gap-2 m-auto">
         <h2 className="titulo respoFont">{props.titulo}</h2>
-        <ul className="text-md md:text-2xl">
+        <ul className="text-md md:text-[2rem]">
           <li className="font-terceiraFont list-disc text-md">
             {props.artigo1}
           </li>
