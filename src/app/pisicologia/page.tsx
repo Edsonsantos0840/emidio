@@ -13,11 +13,11 @@ function Pisicologia() {
         muda={"md:block"}
         tamanho={"md:w-[160%] lg:w-[67%] xl:w-[50%]"}
       />
-      <section className="m-auto w-[99%] md:w-[60%] p-1 py-8">
-        <h2 className="text-[var(--corLetra2)] text-2xl text-center respoFont">
+      <section className="m-auto w-[99%] lg:w-[60%] p-1 py-8">
+        <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl text-center respoFont">
           O que é Psicologia?
         </h2>
-        <p className="respoFont text-center">
+        <p className="respoFont text-center md:text-[1.3rem]">
           A psicologia é a ciência que estuda o comportamento humano e os
           processos mentais. Ela busca compreender como as pessoas pensam,
           sentem e se comportam, bem como as interações entre os aspectos
@@ -31,7 +31,7 @@ function Pisicologia() {
           entendimento e a melhoria da qualidade de vida das pessoas.
         </p>
       </section>
-      <h2 className="text-[var(--corLetra2)] text-2xl text-center  ease-in duration-700 respoFont">
+      <h2 className="text-[var(--corLetra2)] text-3xl text-center  ease-in duration-700 respoFont">
         Tratamentos da Psicologia
       </h2>
       <hr />

@@ -26,7 +26,7 @@ function Massoterapia() {
           aumento da flexibilidade.
         </p>
       </section>
-      <section className="p-1 md:p-8 bg-[var(--fundoCard2)] w-[90%] md:w-[80%] rounded-md shadow-md  group cursor-pointer">
+      <section className="p-1 md:p-8 bg-[var(--fundoCard2)] w-[90%] lg:w-[80%] rounded-md shadow-md  group cursor-pointer">
         <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl text-center respoFont ">
           Modalidades
         </h2>
