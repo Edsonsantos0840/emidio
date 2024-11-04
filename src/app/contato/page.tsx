@@ -210,9 +210,9 @@ export default function Contato() {
               value={esp}
               onChange={(e) => setEsp(e.target.value)}
             >
-              <option value="" className="w-[80%]">--------Selecione--------</option>
-              <option value="Massoterapia" className="w-[80%]">Massoterapia</option>
-              <option value="Psicologia" className="w-[80%]">Psicologia</option>
+              <option value="" >--------Selecione--------</option>
+              <option value="Massoterapia" >Massoterapia</option>
+              <option value="Psicologia" >Psicologia</option>
             </select>
           </label>
         </div>

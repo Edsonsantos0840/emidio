@@ -17,7 +17,7 @@ function Sobre() {
         muda={"md:block"}
         tamanho={"md:w-[160%] lg:w-[67%] xl:w-[50%]"}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 ease-in duration-300">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 mt-10 ease-in duration-300">
         <div className="rounded-lg shadow-lg transform transition hover:-translate-y-2 hover:shadow-2xl bg-custom-gradient p-10 alinha6 group ease-in duration-300">
           <h2 className="text-2xl font-semibold mb-4  text-[var(--corLetra2)] respoFont">
             Psicologia
