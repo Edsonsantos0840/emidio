@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+//Componentes.
 import CardHead from "./components/cards/CardHead";
 import ima from "../../public/image/4 copy.png";
 import CardEspecifico from "./components/cards/CardEspecifico";
@@ -14,6 +14,7 @@ export default function Home() {
         muda="hidden"
         tamanho={"md:w-[76%] lg:w-[58%] xl:w-[50%]"}
       />
+      {/* Página Principal */}
       <h3 className="md:hidden py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">
         Áreas que Trabalhamos.
       </h3>
@@ -140,7 +141,7 @@ export default function Home() {
             agenda="Agende um Horário"
           />
           <div className=" p-4 md:p-8 bg-[var(--fundoCard2)] md:w-[50%] rounded-md shadow-md">
-            <h2 className="text-[var(--corLetra2)] text-xl text-center">
+            <h2 className="titulo">
               Você sofre desses males? Podemos te ajudar.
             </h2>
             <p>

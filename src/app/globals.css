@@ -89,4 +89,10 @@ input, select, textarea{
   .linkNav {
     @apply hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
   }
+  .titulo {
+    @apply text-[var(--corLetra2)] text-xl text-center
+  }
+  .artigo {
+    @apply font-terceiraFont list-disc text-md
+  }
 }

@@ -30,40 +30,18 @@ export default function CardEspecifico(props: CardEspecificoProps) {
         />
       </div>
       <article className=" pt-2 hidden group-hover:alinha6 gap-2 m-auto">
-        <h2 className="text-[var(--corLetra2)] text-xl text-center">
-          {props.titulo}
-        </h2>
+        <h2 className="titulo">{props.titulo}</h2>
         <ul className="text-md">
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo1}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo2}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo3}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo4}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo5}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo6}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo7}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo8}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo9}
-          </li>
-          <li className="font-terceiraFont list-disc text-md">
-            {props.artigo10}
-          </li>
+          <li className="artigo">{props.artigo1}</li>
+          <li className="artigo">{props.artigo2}</li>
+          <li className="artigo">{props.artigo3}</li>
+          <li className="artigo">{props.artigo4}</li>
+          <li className="artigo">{props.artigo5}</li>
+          <li className="artigo">{props.artigo6}</li>
+          <li className="artigo">{props.artigo7}</li>
+          <li className="artigo">{props.artigo8}</li>
+          <li className="artigo">{props.artigo9}</li>
+          <li className="artigo">{props.artigo10}</li>
         </ul>
         <Link
           href={"/contato"}
