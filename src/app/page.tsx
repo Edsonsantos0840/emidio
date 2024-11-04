@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
       <section className="md:alinha2 md:px-5 w-full ">
-        <div className="md:flex w-full ">
+      <div className="lg:flex w-full">
           <CardEspecifico
             imagem="/image/Recuperação de Lesões 2.png"
             titulo="Recuperação de Lesões"
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
       </section>
       <section className="md:alinha2 md:px-5 w-full ">
-        <div className="md:flex w-full ">
+      <div className="lg:flex w-full">
           <CardEspecifico
             imagem="/image/Circulação Sanguínea.png"
             titulo="Problemas de circulação sanguínea "
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
       <section className="md:alinha2 md:px-5 w-full ">
-        <div className="md:flex w-full ">
+      <div className="lg:flex w-full">
           <CardEspecifico
             imagem="/image/desenvolvimento Pessoal.png"
             titulo="Crescimento pessoal"
@@ -140,7 +140,7 @@ export default function Home() {
             artigo10="Crenças Limitantes. "
             agenda="Agende um Horário"
           />
-          <div className=" p-4 md:p-8 bg-[var(--fundoCard2)] md:w-[50%] rounded-md shadow-md">
+          <div className=" p-4 md:p-8 bg-[var(--fundoCard2)] lg:w-[50%] rounded-md shadow-md">
             <h2 className="titulo respoFont">
               Você sofre desses males? Podemos te ajudar.
             </h2>
