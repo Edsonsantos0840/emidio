@@ -31,14 +31,14 @@ export default function CardInfo2(props: CardInfo2Props) {
             className="imgInfo"
           />
         </div>
-        <article className="gap-2 w-full group-hover:w-[90%] ease-in duration-700 ">
+        <article className="gap-2 w-full group-hover:w-[90%] ease-in duration-700  ">
           <h2 className="titulo group-hover:hidden pt-3 respoFont">
             {props.titulo}
           </h2>
-          <p className="group-hover:hidden text-center p-2 respoFont">
+          <p className="group-hover:hidden md:text-[1.3rem] text-center p-2 respoFont">
             {props.texto}
           </p>
-          <ul className="hidden group-hover:flex flex-col gap-2 m-auto py-4 p-2 text-center md:text-justify ">
+          <ul className="hidden group-hover:flex flex-col gap-2 m-auto py-4 p-2 md:text-[1.3rem] text-center md:text-justify ">
             <p className="iinfoP respoFont">{props.artigo1}</p>
             <p className="iinfoP respoFont">{props.artigo2}</p>
             <p className="iinfoP respoFont">{props.artigo3}</p>

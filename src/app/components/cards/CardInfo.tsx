@@ -34,10 +34,10 @@ export default function CardInfo(props: CardInfoProps) {
           <h2 className="titulo group-hover:hidden pt-3 respoFont">
             {props.titulo}
           </h2>
-          <p className="group-hover:hidden text-center p-2 respoFont">
+          <p className="group-hover:hidden text-center p-2 respoFont md:text-[1.3rem]">
             {props.texto}
           </p>
-          <ul className="hidden group-hover:flex flex-col gap-2 m-auto py-4 p-2 text-center md:text-justify">
+          <ul className="hidden group-hover:flex flex-col gap-2 m-auto py-4 p-2 text-center md:text-justify md:text-[1.3rem]">
             <p className="iinfoP respoFont">{props.artigo1}</p>
             <p className="iinfoP respoFont">{props.artigo2}</p>
             <p className="iinfoP respoFont">{props.artigo3}</p>
