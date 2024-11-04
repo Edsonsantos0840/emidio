@@ -28,8 +28,8 @@ function NavBar() {
       </div>
       <div className="absolute md:flex-row w-full gap-4 group  md:bg-transparent py-[25px] md:py-[5px] p-2 m-auto ">
         <RxHamburgerMenu className="md:hidden text-3xl cursor-pointer" />
-        <div className="hidden group-hover:block w-full md:flex  md:gap-2  bg-[var(--corSombra)] md:bg-[var(--corFundo2)] absolute md:relative left-0 top-[80px] md:top-0 md:left-[20.4rem] lg:left-[29.5rem]">
-          <div className=" w-full flex flex-col md:flex-row text-[var(--corFundo)] md:text-[var(--corLetra)] p-2  md:gap-2 lg:gap-8 font-[var(--font1)]">
+        <div className="hidden group-hover:block w-full md:flex  md:gap-2 bg-[var(--corSombra2)]  lg:bg-[var(--corSombra)] md:bg-[var(--corFundo2)] absolute md:relative left-0 top-[80px] md:top-0 md:left-[20.4rem] lg:left-[29.5rem]">
+          <div className=" w-full flex flex-col md:flex-row text-[var(--corFundo)] md:text-[var(--corLetra)] p-2 text-center md:gap-2 lg:gap-8 font-[var(--font1)]">
             <Link href={"/"} className="linkNav ">
               Início
             </Link>
