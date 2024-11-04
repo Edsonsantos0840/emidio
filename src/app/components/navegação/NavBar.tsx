@@ -1,6 +1,9 @@
-import Image from "next/image";
-import logo from "../../../../public/image/2.png";
+//Módulos.
 import Link from "next/link";
+import Image from "next/image";
+//Imagem.
+import logo from "../../../../public/image/2.png";
+//Ícone.
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function NavBar() {

@@ -1,7 +1,7 @@
 "use client";
-
+//Imagem.
 import logo from "../../../public/image/3.png";
-
+//Icones.
 import {
   BsCalendarDate,
   BsFacebook,
@@ -16,19 +16,21 @@ import {
   FaCommentAlt,
   FaMedkit,
 } from "react-icons/fa";
+//Módulos.
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+//Módulo Externo.
 import emailjs from "@emailjs/browser";
 
 export default function Contato() {
-  const [nome, setNome] = useState("");
-  const [email, setEmail] = useState("");
-  const [fone, setFone] = useState("");
-  const [esp, setEsp] = useState("");
-  const [datas, setDatas] = useState("");
-  const [mensagem, setMensagem] = useState("");
-  const [recado, setRecado] = useState("");
+  const [nome, setNome] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [fone, setFone] = useState<string>("");
+  const [esp, setEsp] = useState<string>("");
+  const [datas, setDatas] = useState<string>("");
+  const [mensagem, setMensagem] = useState<string>("");
+  const [recado, setRecado] = useState<string>("");
 
   function captura(e: { preventDefault: () => void }) {
     e.preventDefault();
@@ -48,7 +50,14 @@ export default function Contato() {
       setRecado("Digite pelo menos 8 números");
     } else {
       setRecado("Enviado com sucesso, entraremos em contato em breve!!!");
-      const templateParams = {
+      const templateParams: {
+        from_name: string;
+        email: string;
+        telefone: string;
+        especialidade: string;
+        data: string;
+        message: string;
+    } = {
         from_name: nome,
         email,
         telefone: fone,
@@ -83,7 +92,7 @@ export default function Contato() {
   return (
     <div className="min-h-screen w-full custom-gradient py-10 md:alinha3 ">
       {/* Header & Logo Section */}
-      <div className=" mx-auto  p-8   flex flex-col items-center md:pt-14 body ">
+      <div className=" mx-auto  p-8 flex flex-col items-center md:pt-14 body ">
         <Link href={"/"} passHref>
           <Image
             src={logo}

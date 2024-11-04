@@ -1,4 +1,4 @@
-import React from "react";
+//Módulos.
 import Image from "next/image";
 interface CardInfo2Props {
   imagem: string;

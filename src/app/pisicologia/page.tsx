@@ -5,7 +5,7 @@ import CardInfo from "../components/cards/CardInfo";
 
 function Pisicologia() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-16">
+    <main className="alinha min-h-screen pt-16">
       <CardHead
         image={ima}
         testo="Saúde do corpo e da mente."

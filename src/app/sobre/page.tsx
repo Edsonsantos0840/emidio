@@ -1,13 +1,15 @@
+//Componentes.
 import CardHead from "../components/cards/CardHead";
 import ima from "../../../public/image/17.png";
 import pscicologa from "../../../public/image/60.png";
 import massoterapeuta from "../../../public/image/61.png";
+//Módulos.
 import Image from "next/image";
 import Link from "next/link";
 
 function Sobre() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-20">
+    <main className="alinha pt-20">
       <CardHead
         image={ima}
         testo="Saúde do corpo e da mente."

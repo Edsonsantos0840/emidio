@@ -1,3 +1,4 @@
+//Componentes.
 import CardHead from "../components/cards/CardHead";
 import ima from "../../../public/image/3 copy.png";
 import CardInfo from "../components/cards/CardInfo";
@@ -5,7 +6,7 @@ import CardInfo2 from "../components/cards/CardInfo2";
 
 function Massoterapia() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-16 ">
+    <main className=" min-h-screen alinha pt-16 ">
       <CardHead
         image={ima}
         testo="Saúde do corpo e da mente."

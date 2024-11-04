@@ -141,10 +141,10 @@ export default function Home() {
             agenda="Agende um Horário"
           />
           <div className=" p-4 md:p-8 bg-[var(--fundoCard2)] md:w-[50%] rounded-md shadow-md">
-            <h2 className="titulo">
+            <h2 className="titulo respoFont">
               Você sofre desses males? Podemos te ajudar.
             </h2>
-            <p>
+            <p className="respoFont" >
               Tanto a massoterapia quanto a psicologia são recursos valiosos
               para cuidarmos de nós mesmos de maneira integral. Enquanto a
               massoterapia foca no relaxamento físico, a psicologia nos auxilia

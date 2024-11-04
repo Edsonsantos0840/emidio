@@ -1,5 +1,7 @@
+//Módulos.
 import Image from "next/image";
 import Link from "next/link";
+//Ícones.
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 interface PropsCardHead {
@@ -17,7 +19,6 @@ interface PropsCardHead {
   mensagem?: string;
   botao?: boolean;
   formulário?: boolean;
-
 }
 
 export default function CardHead(props: PropsCardHead) {
