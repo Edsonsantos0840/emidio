@@ -86,4 +86,7 @@ input, select, textarea{
   .alinha6 {
     @apply flex flex-col justify-center items-center
   }
+  .linkNav {
+    @apply hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
+  }
 }
