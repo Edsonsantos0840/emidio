@@ -87,7 +87,7 @@ input, select, textarea{
     @apply flex flex-col justify-center items-center
   }
   .linkNav {
-    @apply hover:scale-105 p-1 md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
+    @apply hover:scale-105 p-1 text-lg md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
   }
   .titulo {
     @apply text-[var(--corLetra2)] text-xl text-center
