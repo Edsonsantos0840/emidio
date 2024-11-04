@@ -206,13 +206,13 @@ export default function Contato() {
               <span className="text-gray-700">*Especialidade:</span>
             </div>
             <select
-              className="border-gray-300 border w-[80%] text-sm text-center rounded-md"
+              className="border-gray-300 border w-full text-sm text-center rounded-md"
               value={esp}
               onChange={(e) => setEsp(e.target.value)}
             >
-              <option value="">--------Selecione--------</option>
-              <option value="Massoterapia">Massoterapia</option>
-              <option value="Psicologia">Psicologia</option>
+              <option value="" className="w-[80%]">--------Selecione--------</option>
+              <option value="Massoterapia" className="w-[80%]">Massoterapia</option>
+              <option value="Psicologia" className="w-[80%]">Psicologia</option>
             </select>
           </label>
         </div>

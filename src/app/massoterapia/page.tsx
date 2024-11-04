@@ -14,11 +14,11 @@ function Massoterapia() {
         muda={"md:block"}
         tamanho={"md:w-[160%] lg:w-[67%] xl:w-[50%]"}
       />
-      <section className="m-auto w-[90%] md:w-[60%] p-1 py-8 ">
+      <section className="m-auto w-[98%] md:w-[60%] p-1 py-8 ">
         <h2 className="text-[var(--corLetra2)] text-2xl text-center respoFont ">
           Afinal, o que é a Massoterapia?
         </h2>
-        <p className="respoFont">
+        <p className="respoFont text-center">
           A massoterapia é uma forma de terapia que envolve a aplicação de
           diferentes técnicas de massagem com o objetivo de promover o bem-estar
           físico e mental. Ela é utilizada para relaxamento, alívio de tensões
