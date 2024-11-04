@@ -19,7 +19,7 @@ function NavBar() {
               Espaço
             </h1>
             <div className="flex flex-col justify-end">
-              <h2 className="text-[1.6rem] md:text-[1.5rem] lg:text-3xl text-[var(--primeira-cor)] lg:text-[var(--corLetra2)] text-center">
+              <h2 className="text-[1.6rem] md:text-[1.5rem] lg:text-3xl text-[var(--letra3-cor)] lg:text-[var(--corLetra2)] text-center">
                 Emídio & Sá
               </h2>
               <p className="text-[.6rem] respoFont lg:text-xs text-[var(--primeira-cor)] lg:text-[var(--corLetra2)]">
