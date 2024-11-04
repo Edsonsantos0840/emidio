@@ -95,7 +95,7 @@ input, select, textarea{
     @apply text-5xl text-[var(--fundoBotao)] hover:scale-110
   }
   .linkHead {
-    @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[26vw] w-[45vw] text-[1rem] md:text-[1.1rem]  text-center font-semibold hover:scale-105 ease-in duration-300
+    @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[26vw] w-[48vw] text-[1.1rem] md:text-[1.1rem]  text-center font-terceiraFont lg:font-fontPrincipal font-semibold hover:scale-105 ease-in duration-300
   }
   .topoInfo {
     @apply w-full  bg-[var(--fundoCard3)] shadow-2xl rounded-lg border-2 border-[var(--corLetra2)] gap-2 md:gap-5 ease-in duration-700 p-1 md:p-0
