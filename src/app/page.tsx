@@ -12,7 +12,7 @@ export default function Home() {
         testo="Saúde do corpo e da mente."
         descrição="Determinação e satisfação em oferecer o melhor para nossos paciêntes."
         muda="hidden"
-        tamanho={"md:w-[76%] lg:w-[58%] xl:w-[50%]"}
+        tamanho={"md:w-[100%] lg:w-[58%] xl:w-[50%]"}
       />
       {/* Página Principal */}
       <h3 className="md:hidden py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">
@@ -21,8 +21,8 @@ export default function Home() {
       <h3 className="hidden md:block py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">
         ______________Áreas que Trabalhamos.______________
       </h3>
-      <section className="md:alinha2 md:px-5 w-full ">
-        <div className="md:flex w-full ">
+      <section className="md:alinha2 md:px-5 w-full m-auto ">
+        <div className="lg:flex w-full">
           <CardEspecifico
             imagem="/image/fibromialgia.png"
             titulo="Dores no corpo. "

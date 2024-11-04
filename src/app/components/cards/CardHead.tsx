@@ -34,8 +34,8 @@ export default function CardHead(props: PropsCardHead) {
         className=""
       />
       <div className="relative z-10 flex justify-between pt-8 md:pt-24 lg:pt-40 h-full bg-[var(--corSombra2)] lg:bg-[var(--corSombra)] w-full">
-        <div className={`w-[50%]  hidden ${props.muda}`}></div>
-        <div className={`z-20 md:w-[100%] ${props.tamanho}`}>
+        <div className={`w-[50%]   hidden ${props.muda}`}></div>
+        <div className={`z-20  ${props.tamanho}`}>
           <div className="alinha6">
             <h1 className="TestoHeader md:text-[3.2rem] text-[2rem]  text-center p-1  md:p-0">
               {props.testo}
