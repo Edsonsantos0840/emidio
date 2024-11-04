@@ -19,8 +19,8 @@ interface CardEspecificoProps {
 
 export default function CardEspecifico(props: CardEspecificoProps) {
   return (
-    <div className="md:flex md:w-[50%] p-2 md:p-5 group hover:bg-[var(--fundoCard3)] md:hover:w-[150%] hover:shadow-2xl rounded-lg hover:border-2 border-[var(--corLetra2)] gap-5 ease-in duration-700">
-      <div className="md:w-[350px] md:h-[350px]">
+    <div className="lg:flex md:w-full p-2 md:p-5 group hover:bg-[var(--fundoCard3)] md:hover:w-[150%] hover:shadow-2xl rounded-lg hover:border-2 border-[var(--corLetra2)] gap-5 ease-in duration-700">
+      <div className="lg:w-[350px] lg:h-[350px]">
         <Image
           src={props.imagem}
           alt="imagem"
