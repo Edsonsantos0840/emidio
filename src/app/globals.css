@@ -98,5 +98,17 @@ input, select, textarea{
   .linkHead {
     @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[26vw] w-[40vw] text-[.9rem] md:text-[1.1rem]  text-center font-semibold hover:scale-105 ease-in duration-300
   }
+  .topoInfo {
+    @apply w-full  bg-[var(--fundoCard3)] shadow-2xl rounded-lg border-2 border-[var(--corLetra2)] gap-2 md:gap-5 ease-in duration-700 p-1 md:p-0
+  }
+  .topoInfo2 {
+    @apply md:flex w-full gap-10 group-hover:bg-[var(--fundoCard2)]
+  }
+  .imgInfo {
+    @apply shadow-lg rounded-l-md w-full md:group-hover:h-[100%] md:group-hover:w-[350px]
+  }
+  .infoP {
+    @apply font-terceiraFont list-disc text-sm
+  }
 
 }
