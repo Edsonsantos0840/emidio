@@ -138,7 +138,7 @@ export default function Contato() {
         <h2 className="text-3xl font-semibold text-gray-700 text-center respoFont">
           Agende um Horário
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {recado && <p className="md:text-[1.4rem] respoFont">{recado}</p>}
           {/* Nome */}
           <label className="flex flex-col">
