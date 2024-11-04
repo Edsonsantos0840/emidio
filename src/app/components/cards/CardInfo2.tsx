@@ -21,7 +21,8 @@ export default function CardInfo2(props: CardInfo2Props) {
   return (
     <div className="topoInfo group">
       <div className="topoInfo2">
-        <div className="md:hidden block">
+        {/* Ajusta o lado que a imagem aparece */}
+        <div className="xl:hidden block">
           <Image
             src={props.imagem}
             alt="imagem"
@@ -50,7 +51,8 @@ export default function CardInfo2(props: CardInfo2Props) {
             <p className="iinfoP respoFont">{props.artigo10}</p>
           </ul>
         </article>
-        <div className="hidden md:block">
+         {/* Ajusta o lado que a imagem aparece */}
+        <div className="hidden xl:block">
           <Image
             src={props.imagem}
             alt="imagem"

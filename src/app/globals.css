@@ -98,13 +98,13 @@ input, select, textarea{
     @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[40vw] w-[48vw] text-[1.1rem] md:text-[1.4rem]  text-center respoFont font-semibold hover:scale-105 ease-in duration-300
   }
   .topoInfo {
-    @apply w-full  bg-[var(--fundoCard3)] shadow-2xl rounded-lg border-2 border-[var(--corLetra2)] gap-2 md:gap-5 ease-in duration-700 p-1 md:p-0
+    @apply w-full  bg-[var(--fundoCard3)] shadow-2xl rounded-lg border-2 border-[var(--corLetra2)] gap-2 md:gap-5 ease-in duration-700 p-1 md:p-4
   }
   .topoInfo2 {
-    @apply md:flex w-full gap-10 group-hover:bg-[var(--fundoCard2)]
+    @apply xl:flex w-full gap-10 group-hover:bg-[var(--fundoCard2)]
   }
   .imgInfo {
-    @apply shadow-lg rounded-l-md w-full md:group-hover:h-[100%] md:group-hover:w-[350px]
+    @apply shadow-lg rounded-l-md w-full xl:group-hover:h-[100%] xl:group-hover:w-[350px]
   }
   .infoP {
     @apply font-terceiraFont list-disc text-sm
