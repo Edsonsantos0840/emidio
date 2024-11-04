@@ -90,7 +90,7 @@ export default function Contato() {
   }
 
   return (
-    <div className="min-h-screen w-full custom-gradient py-10 md:alinha3 ">
+    <div className="min-h-screen w-full custom-gradient py-12 lg:alinha3 ">
       {/* Header & Logo Section */}
       <div className=" mx-auto  p-8 flex flex-col items-center md:pt-14 body ">
         <Link href={"/"} passHref>
@@ -139,12 +139,12 @@ export default function Contato() {
           Agende um Horário
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {recado && <p>{recado}</p>}
+          {recado && <p className="md:text-[1.3rem]">{recado}</p>}
           {/* Nome */}
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaUserAlt className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700">*Nome:</span>
+              <span className="text-gray-700 md:text-[1.3rem]">*Nome:</span>
             </div>
             <input
               type="text"
@@ -159,7 +159,7 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaEnvelope className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700">*E-mail:</span>
+              <span className="text-gray-700 md:text-[1.3rem]">*E-mail:</span>
             </div>
             <input
               type="email"
@@ -174,7 +174,7 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaPhoneAlt className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700">*Telefone:</span>
+              <span className="text-gray-700 md:text-[1.3rem]">*Telefone:</span>
             </div>
             <input
               type="text"
@@ -189,7 +189,7 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <BsCalendarDate className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700">*Data:</span>
+              <span className="text-gray-700 md:text-[1.3rem]">*Data:</span>
             </div>
             <input
               type="date"
@@ -203,10 +203,10 @@ export default function Contato() {
           <label className="flex flex-col ">
             <div className="flex items-center space-x-2">
               <FaMedkit className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700">*Especialidade:</span>
+              <span className="text-gray-700 md:text-[1.3rem]">*Especialidade:</span>
             </div>
             <select
-              className="border-gray-300 border w-full text-sm text-center rounded-md"
+              className="border-gray-300 border w-full text-sm text-center rounded-md md:text-[1.3rem]"
               value={esp}
               onChange={(e) => setEsp(e.target.value)}
             >
@@ -221,7 +221,7 @@ export default function Contato() {
         <label className="flex flex-col">
           <div className="flex items-center space-x-2">
             <FaCommentAlt className="text-[var(--corLetra2)]" />
-            <span className="text-gray-700">Deixe sua mensagem:</span>
+            <span className="text-gray-700 md:text-[1.3rem]">Deixe sua mensagem:</span>
           </div>
           <textarea
             className="border-gray-300 border h-24 p-2 rounded-md"
@@ -234,7 +234,7 @@ export default function Contato() {
         {/* Botão de Enviar */}
         <button
           type="submit"
-          className="w-full bg-[var(--corLetra2)] text-white py-2 rounded-md hover:bg-[var(--letra1-cor)] transition duration-300"
+          className="w-full bg-[var(--corLetra2)] text-white md:text-[1.3rem] py-2 rounded-md hover:bg-[var(--letra1-cor)] transition duration-300"
         >
           Enviar
         </button>
