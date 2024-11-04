@@ -126,7 +126,7 @@ export default function Contato() {
         onSubmit={captura}
         className="max-w-6xl mx-auto bg-white p-5 md:mt-16 rounded-xl shadow-lg space-y-3"
       >
-        <h2 className="text-3xl font-semibold text-gray-700 text-center">
+        <h2 className="text-3xl font-semibold text-gray-700 text-center respoFont">
           Agende um Horário
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
