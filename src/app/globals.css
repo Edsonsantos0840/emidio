@@ -86,7 +86,7 @@ input, select, textarea{
     @apply hover:scale-105 p-1 respoFont text-lg md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
   }
   .titulo {
-    @apply text-[var(--corLetra2)] text-lg md:text-xl text-center
+    @apply text-[var(--corLetra2)] text-lg md:text-3xl text-center
   }
   .TestoP {
     @apply respoFont text-[var(--fundoBotao)] shadow-md mt-[-10]
