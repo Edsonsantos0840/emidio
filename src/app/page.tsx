@@ -144,7 +144,7 @@ export default function Home() {
             <h2 className="titulo respoFont">
               Você sofre desses males? Podemos te ajudar.
             </h2>
-            <p className="respoFont" >
+            <p className="respoFont md:text-[1.6rem]" >
               Tanto a massoterapia quanto a psicologia são recursos valiosos
               para cuidarmos de nós mesmos de maneira integral. Enquanto a
               massoterapia foca no relaxamento físico, a psicologia nos auxilia
