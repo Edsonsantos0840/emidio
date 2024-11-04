@@ -35,31 +35,31 @@ function Massoterapia() {
           técnicas mais comuns incluem :
         </p>
         <p className="hidden group-hover:block group-hover:ease-in group-hover:duration-700 w-[95%] m-auto py-6 respoFont ">
-          <strong>Massagem Clássica ou Sueca:</strong> Uma das formas mais
+          <strong className="respoFont">Massagem Clássica ou Sueca:</strong> Uma das formas mais
           conhecidas de massoterapia, que utiliza movimentos como amassamento,
           deslizamento, fricção e percussão para relaxar os músculos e melhorar
           a circulação. <br />
-          <strong>Massagem Terapêutica:</strong> Concentra-se em áreas
+          <strong className="respoFont">Massagem Terapêutica:</strong> Concentra-se em áreas
           específicas do corpo para tratar dores musculares, lesões e disfunções
           físicas. Pode envolver técnicas como liberação miofascial, alongamento
           e pressão profunda. <br />
-          <strong>Massagem Desportiva:</strong> Projetada para atletas e pessoas
+          <strong className="respoFont">Massagem Desportiva:</strong> Projetada para atletas e pessoas
           envolvidas em atividades físicas intensas. Ajuda na prevenção e
           recuperação de lesões, melhorando o desempenho atlético. <br />
-          <strong>Massagem Shiatsu:</strong> Originária do Japão, utiliza
+          <strong className="respoFont">Massagem Shiatsu:</strong> Originária do Japão, utiliza
           pressão dos dedos em pontos específicos do corpo para equilibrar o
           fluxo de energia (conhecido como qi ou chi). <br />
-          <strong>Massagem Tailandesa:</strong> Realizada no chão, com o
+          <strong className="respoFont">Massagem Tailandesa:</strong> Realizada no chão, com o
           paciente vestido com roupas confortáveis. Envolve alongamentos
           passivos e pressões ao longo das linhas de energia do corpo. <br />
-          <strong>Massagem de Pedras Quentes:</strong> Utiliza pedras aquecidas
+          <strong className="respoFont">Massagem de Pedras Quentes:</strong> Utiliza pedras aquecidas
           para massagear o corpo, combinando o calor terapêutico com a pressão
           das pedras. <br />
-          <strong>Massagem Reflexológica:</strong> Baseia-se na ideia de que
+          <strong className="respoFont">Massagem Reflexológica:</strong> Baseia-se na ideia de que
           diferentes partes dos pés, mãos e orelhas estão conectadas a órgãos e
           sistemas do corpo. Estimular essas áreas pode promover o equilíbrio e
           a cura. <br />
-          <strong>Massagem Ayurvédica:</strong> Originada da Índia, combina
+          <strong className="respoFont">Massagem Ayurvédica:</strong> Originada da Índia, combina
           técnicas de massagem com os princípios da medicina ayurvédica, visando
           equilibrar os doshas (energias) do corpo.
         </p>

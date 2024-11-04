@@ -38,16 +38,16 @@ export default function CardInfo(props: CardInfoProps) {
             {props.texto}
           </p>
           <ul className="hidden group-hover:flex flex-col gap-2 m-auto py-4 p-2 text-center md:text-justify">
-            <p className="iinfoP">{props.artigo1}</p>
-            <p className="iinfoP">{props.artigo2}</p>
-            <p className="iinfoP">{props.artigo3}</p>
-            <p className="iinfoP">{props.artigo4}</p>
-            <p className="iinfoP">{props.artigo5}</p>
-            <p className="iinfoP">{props.artigo6}</p>
-            <p className="iinfoP">{props.artigo7}</p>
-            <p className="iinfoP">{props.artigo8}</p>
-            <p className="iinfoP">{props.artigo9}</p>
-            <p className="iinfoP">{props.artigo10}</p>
+            <p className="iinfoP respoFont">{props.artigo1}</p>
+            <p className="iinfoP respoFont">{props.artigo2}</p>
+            <p className="iinfoP respoFont">{props.artigo3}</p>
+            <p className="iinfoP respoFont">{props.artigo4}</p>
+            <p className="iinfoP respoFont">{props.artigo5}</p>
+            <p className="iinfoP respoFont">{props.artigo6}</p>
+            <p className="iinfoP respoFont">{props.artigo7}</p>
+            <p className="iinfoP respoFont">{props.artigo8}</p>
+            <p className="iinfoP respoFont">{props.artigo9}</p>
+            <p className="iinfoP respoFont">{props.artigo10}</p>
           </ul>
         </article>
       </div>
