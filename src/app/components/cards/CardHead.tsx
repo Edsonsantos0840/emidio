@@ -46,16 +46,10 @@ export default function CardHead(props: PropsCardHead) {
             </p>
             {!props.botao && (
               <div className=" alinha3 gap-3 md:gap-14 pt-4 md:pt-4">
-                <Link
-                  href={"/contato"}
-                  className="bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[26vw] w-[40vw] text-[.9rem] md:text-[1.1rem]  text-center font-semibold hover:scale-105 ease-in duration-300 "
-                >
+                <Link href={"/contato"} className="linkHead ">
                   Agende um horário
                 </Link>
-                <Link
-                  href={"/sobre"}
-                  className="bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw]  md:w-[26vw] w-[40vw] text-[.9rem] md:text-[1.1rem] text-center font-semibold hover:scale-105 ease-in duration-300 "
-                >
+                <Link href={"/sobre"} className="linkHead">
                   Saiba mais..
                 </Link>
               </div>
@@ -70,7 +64,7 @@ export default function CardHead(props: PropsCardHead) {
                     height={300}
                     className="hover:scale-110"
                   />
-                  <div className="flex w-full justify-center md:justify-center items-center gap-1 mt-[-90px]">
+                  <div className=" w-full alinha3 gap-1 mt-[-90px]">
                     <h1 className="text-[2.3rem] md:text-[2.6rem] lg:text-[3.2rem] text-[var(--fundoBotao)] self-baseline">
                       Espaço
                     </h1>
@@ -84,9 +78,9 @@ export default function CardHead(props: PropsCardHead) {
                     </div>
                   </div>
                   <div className="flex gap-4 pt-3 ">
-                    <FaFacebook className="text-5xl text-[var(--fundoBotao)] hover:scale-110 " />
-                    <FaInstagram className="text-5xl text-[var(--fundoBotao)] hover:scale-110 " />
-                    <FaWhatsapp className="text-5xl text-[var(--fundoBotao)] hover:scale-110 " />
+                    <FaFacebook className="headerIcone " />
+                    <FaInstagram className="headerIcone " />
+                    <FaWhatsapp className="headerIcone " />
                   </div>
                 </div>
                 <form className="w-[50%] alinha6 ">

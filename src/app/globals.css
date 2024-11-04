@@ -92,7 +92,11 @@ input, select, textarea{
   .titulo {
     @apply text-[var(--corLetra2)] text-xl text-center
   }
-  .artigo {
-    @apply font-terceiraFont list-disc text-md
+  .headerIcone {
+    @apply text-5xl text-[var(--fundoBotao)] hover:scale-110
   }
+  .linkHead {
+    @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[26vw] w-[40vw] text-[.9rem] md:text-[1.1rem]  text-center font-semibold hover:scale-105 ease-in duration-300
+  }
+
 }
