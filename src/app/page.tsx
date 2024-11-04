@@ -21,7 +21,7 @@ export default function Home() {
       <h3 className="hidden md:block py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">
         ______________Áreas que Trabalhamos.______________
       </h3>
-      <section className="md:alinha2 md:px-5 w-full m-auto ">
+      <section className="md:alinha2 md:px-5 w-full ">
         <div className="lg:flex w-full">
           <CardEspecifico
             imagem="/image/fibromialgia.png"

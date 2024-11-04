@@ -19,14 +19,14 @@ interface CardEspecificoProps {
 
 export default function CardEspecifico(props: CardEspecificoProps) {
   return (
-    <div className="lg:flex md:w-full p-2 md:p-5 group hover:bg-[var(--fundoCard3)] md:hover:w-[150%] hover:shadow-2xl rounded-lg hover:border-2 border-[var(--corLetra2)] gap-5 ease-in duration-700">
-      <div className="lg:w-[350px] lg:h-[350px]">
+    <div className="lg:flex md:w-full p-2 md:p-5 group hover:bg-[var(--fundoCard3)] lg:hover:w-[150%] hover:shadow-2xl rounded-lg hover:border-2 border-[var(--corLetra2)] gap-5 ease-in duration-700">
+      <div className=" lg:w-[350px] lg:h-[350px]">
         <Image
           src={props.imagem}
           alt="imagem"
           width={400}
           height={400}
-          className="shadow-lg"
+          className="shadow-lg md:w-full"
         />
       </div>
       <article className=" pt-2 hidden group-hover:alinha6 gap-2 m-auto">
