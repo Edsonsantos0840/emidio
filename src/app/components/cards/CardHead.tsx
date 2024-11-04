@@ -18,8 +18,6 @@ interface PropsCardHead {
   botao?: boolean;
   formulário?: boolean;
 
-  // botao1?: React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>,
-  // botao2?: React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>,
 }
 
 export default function CardHead(props: PropsCardHead) {
@@ -34,7 +32,7 @@ export default function CardHead(props: PropsCardHead) {
         priority
         className=""
       />
-      <div className="relative z-10 flex justify-between pt-16 md:pt-24 lg:pt-40 h-full bg-[var(--corSombra)] w-full">
+      <div className="relative z-10 flex justify-between pt-8 md:pt-24 lg:pt-40 h-full bg-[var(--corSombra2)] lg:bg-[var(--corSombra)] w-full">
         <div className={`w-[50%] hidden ${props.muda}`}></div>
         <div className={`z-20  ${props.tamanho}`}>
           <div className="alinha6">

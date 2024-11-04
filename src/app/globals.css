@@ -13,6 +13,7 @@
   --fundoCard1: #e5e7eb;
   --fundoCard3: #acff2f27;
   --corSombra: #1240229c;
+  --corSombra2: #124022cc;
   --terceira-cor: rgb(159, 226, 24);
   --letra1-cor: #aaff00;
   --letra-cor: #cbffdd;
@@ -46,12 +47,7 @@ body {
   color: var(--corLetra2) ;
   text-shadow: 2px 2px 3px #00000059;
 }
-.TestoP {
-  font-family: 'Caveat', cursive;
-  color: var(--fundoBotao) ;
-  text-shadow: 2px 2px 3px #00000059;
-  margin-top: -10px;
-}
+
 
 img {
   height: inherit;
@@ -92,11 +88,14 @@ input, select, textarea{
   .titulo {
     @apply text-[var(--corLetra2)] text-xl text-center
   }
+  .TestoP {
+    @apply font-terceiraFont lg:font-fontPrincipal text-[var(--fundoBotao)] shadow-md mt-[-10]
+  }
   .headerIcone {
     @apply text-5xl text-[var(--fundoBotao)] hover:scale-110
   }
   .linkHead {
-    @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[26vw] w-[40vw] text-[.9rem] md:text-[1.1rem]  text-center font-semibold hover:scale-105 ease-in duration-300
+    @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[26vw] w-[45vw] text-[1rem] md:text-[1.1rem]  text-center font-semibold hover:scale-105 ease-in duration-300
   }
   .topoInfo {
     @apply w-full  bg-[var(--fundoCard3)] shadow-2xl rounded-lg border-2 border-[var(--corLetra2)] gap-2 md:gap-5 ease-in duration-700 p-1 md:p-0
