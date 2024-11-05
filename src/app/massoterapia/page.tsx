@@ -15,10 +15,10 @@ function Massoterapia() {
         tamanho={"md:w-[160%] lg:w-[67%] xl:w-[50%]"}
       />
       <section className="m-auto w-[98%] lg:w-[60%] p-1 py-8 ">
-        <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl lg:text-[2rem] text-center respoFont ">
+        <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl text-center respoFont ">
           Afinal, o que é a Massoterapia?
         </h2>
-        <p className="respoFont text-center md:text-[1.3rem] lg:text-[1.2rem]">
+        <p className="respoFont text-center md:text-[1.3rem] lg:text-[1rem]">
           A massoterapia é uma forma de terapia que envolve a aplicação de
           diferentes técnicas de massagem com o objetivo de promover o bem-estar
           físico e mental. Ela é utilizada para relaxamento, alívio de tensões
@@ -27,15 +27,15 @@ function Massoterapia() {
         </p>
       </section>
       <section className="p-1 md:p-8 bg-[var(--fundoCard2)] w-[90%] lg:w-[80%] rounded-md shadow-md  group cursor-pointer">
-        <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl lg:text-[2rem] text-center respoFont ">
+        <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl  text-center respoFont ">
           Modalidades
         </h2>
-        <p className="hidden group-hover:block group-hover:ease-in group-hover:duration-700 w-[90%] lg:w-[60%] md:text-[1.3rem] lg:text-[1.2rem] m-auto respoFont">
+        <p className="hidden group-hover:block group-hover:ease-in group-hover:duration-700 w-[90%] lg:w-[60%] md:text-[1.3rem] lg:text-[1rem] m-auto respoFont">
           Existem diversas abordagens e técnicas dentro da massoterapia, cada
           uma com suas características e objetivos específicos. Algumas das
           técnicas mais comuns incluem :
         </p>
-        <p className="hidden group-hover:block group-hover:ease-in group-hover:duration-700 w-[95%] md:text-[1.3rem] lg:text-[1.2rem] m-auto py-6 respoFont ">
+        <p className="hidden group-hover:block group-hover:ease-in group-hover:duration-700 w-[95%] md:text-[1.3rem] lg:text-[1rem] m-auto py-6 respoFont ">
           <strong className="respoFont">Massagem Clássica ou Sueca:</strong> Uma
           das formas mais conhecidas de massoterapia, que utiliza movimentos
           como amassamento, deslizamento, fricção e percussão para relaxar os
@@ -69,7 +69,7 @@ function Massoterapia() {
           ayurvédica, visando equilibrar os doshas (energias) do corpo.
         </p>
 
-        <p className="py-6 w-[90%] lg:w-[60%] md:text-[1.3rem] lg:text-[1.2rem] m-auto hidden group-hover:block group-hover:ease-in group-hover:duration-700 respoFont">
+        <p className="py-6 w-[90%] lg:w-[60%] md:text-[1.3rem] lg:text-[1rem] m-auto hidden group-hover:block group-hover:ease-in group-hover:duration-700 respoFont">
           É importante ressaltar que a massoterapia não é uma substituição para
           cuidados médicos. Se você tem condições médicas específicas ou está
           lidando com problemas de saúde, é sempre recomendado consultar um
@@ -79,7 +79,7 @@ function Massoterapia() {
           que utiliza.
         </p>
       </section>
-      <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl lg:text-[2rem] text-center py-8">
+      <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl  text-center py-8">
         Tratamentos da Massoterapia
       </h2>
       <hr />

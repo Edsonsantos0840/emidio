@@ -85,19 +85,19 @@ export default function Contato() {
       {/* Sessão de Formulário. */}
       <form
         onSubmit={captura}
-        className="max-w-6xl lg:w-[55%] lg:h-[640px] mx-auto bg-white p-5 md:mt-16 lg:mt-14 rounded-xl shadow-lg lg:rounded-none lg:shadow-none space-y-3"
+        className="max-w-6xl lg:w-[55%] lg:h-[500px] mx-auto bg-white p-5 md:mt-16 lg:mt-14 rounded-xl shadow-lg lg:rounded-none lg:shadow-none space-y-3"
       >
-        <h2 className="text-3xl lg:text-[2rem] font-semibold text-gray-700 text-center respoFont">
+        <h2 className="text-[1.5rem]  font-semibold text-gray-700 text-center respoFont">
           Agende um Horário
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Mensagem de Retorno */}
-          {recado && <p className="md:text-[1.4rem] respoFont">{recado}</p>}
+          {/* Mensagem de Retorno */}
+          {recado && <p className="md:text-[1rem] respoFont">{recado}</p>}
           {/* Nome */}
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaUserAlt className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+              <span className="text-gray-700 md:text-[1.4rem] lg:text-[1rem] respoFont">
                 *Nome:
               </span>
             </div>
@@ -114,7 +114,7 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaEnvelope className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+              <span className="text-gray-700 md:text-[1.4rem] lg:text-[1rem] respoFont">
                 *E-mail:
               </span>
             </div>
@@ -131,7 +131,7 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaPhoneAlt className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+              <span className="text-gray-700 md:text-[1.4rem] lg:text-[1rem] respoFont">
                 *Telefone:
               </span>
             </div>
@@ -148,7 +148,7 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <BsCalendarDate className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+              <span className="text-gray-700 md:text-[1.4rem] lg:text-[1rem] respoFont">
                 *Data:
               </span>
             </div>
@@ -164,12 +164,12 @@ export default function Contato() {
           <label className="flex flex-col ">
             <div className="flex items-center space-x-2">
               <FaMedkit className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+              <span className="text-gray-700 md:text-[1.4rem] lg:text-[1rem] respoFont">
                 *Especialidade:
               </span>
             </div>
             <select
-              className="w-full impu text-sm text-center md:text-[1.3rem] lg:text-[1.2rem] respoFont"
+              className="w-full impu text-sm text-center md:text-[1.3rem] lg:text-[1rem] respoFont"
               value={esp}
               onChange={(e) => setEsp(e.target.value)}
             >
@@ -184,7 +184,7 @@ export default function Contato() {
         <label className="flex flex-col">
           <div className="flex items-center space-x-2">
             <FaCommentAlt className="text-[var(--corLetra2)]" />
-            <span className="text-gray-700 md:text-[1.4rem] respoFont">
+            <span className="text-gray-700 md:text-[1.4rem] lg:text-[1rem] respoFont">
               Deixe sua mensagem:
             </span>
           </div>
@@ -199,7 +199,7 @@ export default function Contato() {
         {/* Botão de Enviar */}
         <button
           type="submit"
-          className="w-full bg-[var(--corLetra2)] text-white md:text-[1.6rem] py-2 rounded-md hover:bg-[var(--letra1-cor)] transition duration-300 respoFont"
+          className="w-full bg-[var(--corLetra2)] text-white md:text-[1.6rem] lg:text-[1.1rem] py-2 rounded-md hover:bg-[var(--letra1-cor)] transition duration-300 respoFont"
         >
           Enviar
         </button>
