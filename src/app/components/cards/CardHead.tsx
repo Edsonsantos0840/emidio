@@ -23,7 +23,7 @@ interface PropsCardHead {
 
 export default function CardHead(props: PropsCardHead) {
   return (
-    <div className="relative w-full  z-0 h-[230px] md:h-[450px] lg:h-[550px]">
+    <div className="relative w-full  z-0 h-[270px] md:h-[450px] lg:h-[550px]">
       <Image
         src={props.image}
         alt="Background"
@@ -33,7 +33,7 @@ export default function CardHead(props: PropsCardHead) {
         priority
         className=""
       />
-      <div className="relative z-10 flex justify-between pt-8 md:pt-24 lg:pt-40 h-full bg-[var(--corSombra2)] lg:bg-[var(--corSombra)] w-full">
+      <div className="relative z-10 flex justify-between pt-12 md:pt-24 lg:pt-40 h-full bg-[var(--corSombra2)] lg:bg-[var(--corSombra)] w-full">
         <div className={`w-[50%]   hidden ${props.muda}`}></div>
         <div className={`z-20  ${props.tamanho}`}>
           <div className="alinha6">
