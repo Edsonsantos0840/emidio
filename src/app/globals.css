@@ -113,7 +113,7 @@ input, select, textarea{
     @apply font-terceiraFont lg:font-fontPrincipal
   }
   .impu {
-    @apply border-gray-300 border p-2 rounded-md h-[20px] md:h-[25px] lg:h-[40px]
+    @apply border-gray-300 border p-2 rounded-md h-[40px]  
   }
  
 }
