@@ -23,7 +23,7 @@ interface PropsCardHead {
 
 export default function CardHead(props: PropsCardHead) {
   return (
-    <div className="relative w-full  z-0 h-[230px] md:h-[350px] lg:h-[550px]">
+    <div className="relative w-full  z-0 h-[230px] md:h-[450px] lg:h-[550px]">
       <Image
         src={props.image}
         alt="Background"
@@ -37,10 +37,10 @@ export default function CardHead(props: PropsCardHead) {
         <div className={`w-[50%]   hidden ${props.muda}`}></div>
         <div className={`z-20  ${props.tamanho}`}>
           <div className="alinha6">
-            <h1 className="TestoHeader md:text-[3.2rem] text-[2rem]  text-center p-1  md:p-0">
+            <h1 className="TestoHeader text-[2rem] md:text-[3.2rem] lg:text-[4.2rem] text-center p-1  md:p-0">
               {props.testo}
             </h1>
-            <p className=" TestoP w-[95%] md:text-[1.3rem] text-[1.1rem] md:w-[60%]  lg:w-[85%] text-center">
+            <p className=" TestoP w-[95%] md:text-[1.3rem] lg:text-[1.3rem] text-[1.1rem] md:w-[60%]  lg:w-[85%] text-center">
               {props.descrição}
             </p>
             {!props.botao && (

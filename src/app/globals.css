@@ -83,13 +83,13 @@ input, select, textarea{
     @apply flex flex-col justify-center items-center
   }
   .linkNav {
-    @apply hover:scale-105 p-1 respoFont text-lg md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
+    @apply hover:scale-105 p-1 respoFont text-lg lg:text-2xl md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
   }
   .titulo {
-    @apply text-[var(--corLetra2)] text-lg md:text-[2.4rem] text-center
+    @apply text-[var(--corLetra2)] text-lg md:text-[2.4rem] lg:text-[1.9rem] text-center lg:text-start
   }
   .TestoP {
-    @apply respoFont text-[var(--fundoBotao)] shadow-md mt-[-10]
+    @apply respoFont text-[var(--fundoBotao)] mt-[-10]
   }
   .headerIcone {
     @apply text-5xl text-[var(--fundoBotao)] hover:scale-110
@@ -112,5 +112,8 @@ input, select, textarea{
   .respoFont {
     @apply font-terceiraFont lg:font-fontPrincipal
   }
-
+  .impu {
+    @apply border-gray-300 border p-2 rounded-md h-[20px] md:h-[25px] lg:h-[40px]
+  }
+ 
 }

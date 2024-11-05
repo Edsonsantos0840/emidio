@@ -21,8 +21,8 @@ export default function Home() {
       <h3 className="hidden md:block py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">
         ______________Áreas que Trabalhamos.______________
       </h3>
-      <section className="md:alinha2 md:px-5 w-full ">
-        <div className="lg:flex w-full">
+      <section className=" w-full md:alinha2 md:px-5  ">
+        <div className=" w-full lg:flex ">
           <CardEspecifico
             imagem="/image/fibromialgia.png"
             titulo="Dores no corpo. "
@@ -144,7 +144,7 @@ export default function Home() {
             <h2 className="text-[var(--corLetra2)] text-lg md:text-[2.1rem] text-center respoFont">
               Você sofre desses males? Podemos te ajudar.
             </h2>
-            <p className="respoFont md:text-[1.6rem]" >
+            <p className="respoFont md:text-[1.6rem] lg:text-[1.3rem]" >
               Tanto a massoterapia quanto a psicologia são recursos valiosos
               para cuidarmos de nós mesmos de maneira integral. Enquanto a
               massoterapia foca no relaxamento físico, a psicologia nos auxilia

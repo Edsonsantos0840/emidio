@@ -8,6 +8,7 @@ import {
   BsInstagram,
   BsWhatsapp,
 } from "react-icons/bs";
+
 import {
   FaLinkedin,
   FaPhoneAlt,
@@ -19,80 +20,31 @@ import {
 //Módulos.
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-//Módulo Externo.
-import emailjs from "@emailjs/browser";
+//Hook personalizado.
+import UseForm from "../components/hooks/UseForm";
 
 export default function Contato() {
-  const [nome, setNome] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [fone, setFone] = useState<string>("");
-  const [esp, setEsp] = useState<string>("");
-  const [datas, setDatas] = useState<string>("");
-  const [mensagem, setMensagem] = useState<string>("");
-  const [recado, setRecado] = useState<string>("");
-
-  function captura(e: { preventDefault: () => void }) {
-    e.preventDefault();
-    if (
-      nome === "" ||
-      email === "" ||
-      fone === "" ||
-      esp === "" ||
-      datas === ""
-    ) {
-      setRecado("Todos os campos com asterisco são obrigatórios!!!");
-    } else if (nome.length < 3) {
-      setRecado("Digite pelo menos 4 letras");
-    } else if (email.length < 3) {
-      setRecado("Digite pelo menos 4 letras");
-    } else if (fone.length < 8) {
-      setRecado("Digite pelo menos 8 números");
-    } else {
-      setRecado("Enviado com sucesso, entraremos em contato em breve!!!");
-      const templateParams: {
-        from_name: string;
-        email: string;
-        telefone: string;
-        especialidade: string;
-        data: string;
-        message: string;
-    } = {
-        from_name: nome,
-        email,
-        telefone: fone,
-        especialidade: esp,
-        data: datas,
-        message: mensagem,
-      };
-      emailjs
-        .send(
-          "service_092zaue",
-          "template_yrje0me",
-          templateParams,
-          "irOtK26YzqWiLtyD8"
-        )
-        .then(
-          (res) => {
-            console.log("EMAIL ENVIADO COM SUCESSO", res.status, res.text);
-            setNome("");
-            setEmail("");
-            setFone("");
-            setEsp("");
-            setDatas("");
-            setMensagem("");
-          },
-          (err) => {
-            console.log("ERRO:", err);
-          }
-        );
-    }
-  }
+  const {
+    captura,
+    nome,
+    setNome,
+    email,
+    setEmail,
+    fone,
+    setFone,
+    esp,
+    setEsp,
+    datas,
+    setDatas,
+    mensagem,
+    setMensagem,
+    recado,
+  } = UseForm();
 
   return (
     <div className="min-h-screen w-full custom-gradient py-12 lg:alinha3 ">
-      {/* Header & Logo Section */}
-      <div className=" mx-auto  p-8 flex flex-col items-center md:pt-14 body ">
+      {/* Sessão Header & Logo  */}
+      <div className=" mx-auto p-8 md:pt-14 flex flex-col items-center body ">
         <Link href={"/"} passHref>
           <Image
             src={logo}
@@ -130,25 +82,28 @@ export default function Contato() {
         </div>
       </div>
 
-      {/* Form Section */}
+      {/* Sessão de Formulário. */}
       <form
         onSubmit={captura}
-        className="max-w-6xl mx-auto bg-white p-5 md:mt-16 rounded-xl shadow-lg space-y-3"
+        className="max-w-6xl lg:w-[55%] lg:h-[640px] mx-auto bg-white p-5 md:mt-16 lg:mt-14 rounded-xl shadow-lg lg:rounded-none lg:shadow-none space-y-3"
       >
-        <h2 className="text-3xl font-semibold text-gray-700 text-center respoFont">
+        <h2 className="text-3xl lg:text-[2rem] font-semibold text-gray-700 text-center respoFont">
           Agende um Horário
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Mensagem de Retorno */}
           {recado && <p className="md:text-[1.4rem] respoFont">{recado}</p>}
           {/* Nome */}
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaUserAlt className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">*Nome:</span>
+              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+                *Nome:
+              </span>
             </div>
             <input
               type="text"
-              className="border-gray-300 border p-2 rounded-md"
+              className="impu"
               placeholder="Digite seu nome"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
@@ -159,11 +114,13 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaEnvelope className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">*E-mail:</span>
+              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+                *E-mail:
+              </span>
             </div>
             <input
               type="email"
-              className="border-gray-300 border p-2 rounded-md"
+              className="impu"
               placeholder="Digite seu e-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -174,11 +131,13 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <FaPhoneAlt className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont" >*Telefone:</span>
+              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+                *Telefone:
+              </span>
             </div>
             <input
               type="text"
-              className="border-gray-300 border p-2 rounded-md"
+              className="impu"
               placeholder="Digite seu telefone"
               value={fone}
               onChange={(e) => setFone(e.target.value)}
@@ -189,11 +148,13 @@ export default function Contato() {
           <label className="flex flex-col">
             <div className="flex items-center space-x-2">
               <BsCalendarDate className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">*Data:</span>
+              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+                *Data:
+              </span>
             </div>
             <input
               type="date"
-              className="border-gray-300 border p-2 rounded-md"
+              className="impu"
               value={datas}
               onChange={(e) => setDatas(e.target.value)}
             />
@@ -203,16 +164,18 @@ export default function Contato() {
           <label className="flex flex-col ">
             <div className="flex items-center space-x-2">
               <FaMedkit className="text-[var(--corLetra2)]" />
-              <span className="text-gray-700 md:text-[1.4rem] respoFont">*Especialidade:</span>
+              <span className="text-gray-700 md:text-[1.4rem] respoFont">
+                *Especialidade:
+              </span>
             </div>
             <select
-              className="border-gray-300 border w-full text-sm text-center rounded-md md:text-[1.4rem] respoFont"
+              className="w-full impu text-sm text-center md:text-[1.3rem] lg:text-[1.2rem] respoFont"
               value={esp}
               onChange={(e) => setEsp(e.target.value)}
             >
-              <option value="" >--------Selecione--------</option>
-              <option value="Massoterapia" >Massoterapia</option>
-              <option value="Psicologia" >Psicologia</option>
+              <option value="">--------Selecione--------</option>
+              <option value="Massoterapia">Massoterapia</option>
+              <option value="Psicologia">Psicologia</option>
             </select>
           </label>
         </div>
@@ -221,7 +184,9 @@ export default function Contato() {
         <label className="flex flex-col">
           <div className="flex items-center space-x-2">
             <FaCommentAlt className="text-[var(--corLetra2)]" />
-            <span className="text-gray-700 md:text-[1.4rem] respoFont">Deixe sua mensagem:</span>
+            <span className="text-gray-700 md:text-[1.4rem] respoFont">
+              Deixe sua mensagem:
+            </span>
           </div>
           <textarea
             className="border-gray-300 border h-24 p-2 rounded-md respoFont"
@@ -238,8 +203,6 @@ export default function Contato() {
         >
           Enviar
         </button>
-
-        {/* Mensagem de Retorno */}
       </form>
     </div>
   );
