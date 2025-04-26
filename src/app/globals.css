@@ -80,13 +80,13 @@ input, select, textarea{
     @apply  flex justify-around items-center
   }
   .alinha6 {
-    @apply flex flex-col justify-center items-center
+    @apply flex flex-col justify-around items-center
   }
   .linkNav {
     @apply hover:scale-105 p-1 respoFont text-lg lg:text-xl md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
   }
   .titulo {
-    @apply text-[var(--corLetra2)] text-lg md:text-[2.4rem] lg:text-[1.5rem] text-center lg:text-start
+    @apply text-[var(--corLetra2)] text-lg md:text-[2.4rem] lg:text-[1.2rem] text-center lg:text-start
   }
   .TestoP {
     @apply respoFont text-[var(--fundoBotao)] mt-[-10]
@@ -95,13 +95,13 @@ input, select, textarea{
     @apply text-5xl text-[var(--fundoBotao)] hover:scale-110
   }
   .linkHead {
-    @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[40vw] w-[48vw] text-[1.1rem] md:text-[1.4rem] lg:text-[1rem]  text-center respoFont font-semibold hover:scale-105 ease-in duration-300
+    @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[40vw] w-[48vw] text-[1.1rem] md:text-[1.4rem] lg:text-[1.2rem]  text-center respoFont font-semibold hover:scale-105 ease-in duration-300
   }
   .topoInfo {
-    @apply w-full  bg-[var(--fundoCard3)] shadow-2xl rounded-lg border-2 border-[var(--corLetra2)] gap-2 md:gap-5 ease-in duration-700 p-1 md:p-4
+    @apply w-full  bg-[var(--fundoCard3)] shadow-2xl rounded-lg border-2 border-[var(--corLetra2)] gap-2 ease-in duration-700 p-1 
   }
   .topoInfo2 {
-    @apply xl:flex w-full gap-10 group-hover:bg-[var(--fundoCard2)]
+    @apply xl:flex w-full gap-2 group-hover:bg-[var(--fundoCard2)]
   }
   .imgInfo {
     @apply shadow-lg rounded-l-md w-full xl:group-hover:h-[100%] xl:group-hover:w-[350px]

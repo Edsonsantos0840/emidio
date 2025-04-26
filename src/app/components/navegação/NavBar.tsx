@@ -1,71 +1,85 @@
-//Módulos.
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-//Imagem.
-import logo from "../../../../public/image/2.png";
-//Ícone.
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
+import { NavFields } from "@/app/fields/NavFields";
 
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="
-      fixed w-[100vw] h-[80px] md:h-[115px] lg:h-[93px] 
-      flex justify-between md:items-center z-20 bg-[var(--corFundo)] shadow-lg "
-    >
-      <div className="w-full ml-16 md:ml-0  ">
-        <div className=" w-full flex items-center ">
-          <div className="w-[100px] h-[100px] md:w-[130px] md:h-[130px] p-1 ">
-            <Image src={logo} alt="Logo" width={250} height={250} />
-          </div>
-          <div className="w-full flex  gap-1 ">
-            <h1 className="text-[1.7rem] md:text-[1.6rem] lg:text-3xl self-baseline">
+    <header className="fixed w-full z-30 bg-[var(--corFundo)] shadow-lg">
+      <nav
+        className="container mx-auto flex justify-between items-center h-[70px] px-4"
+        role="navigation"
+        aria-label="Menu principal"
+      >
+        {/* Logo e nome */}
+        <div className="flex items-center gap-3 w-full">
+          <figure className="relative w-[80px] h-[80px] bg-cover">
+            <Image
+              src="/image/2.png"
+              alt="Logo do Espaço Emídio & Sá"
+              fill
+              sizes="(max-width: 768px) 100px, (max-width: 1024px) 50vw, 33vw"
+              quality={100}
+              priority
+            />
+          </figure>
+
+          <section
+            aria-label="Marca do site"
+            className="flex justify-start items-baseline gap-2 w-full"
+          >
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">
               Espaço
             </h1>
-            <div className="">
-              <h2 className="
-                 text-[1.6rem] md:text-[1.5rem] lg:text-3xl text-center
-                 text-[var(--letra3-cor)] lg:text-[var(--corLetra2)] "
-              >
+            <div>
+              <h2 className="text-lg md:text-xl lg:text-2xl text-[var(--letra3-cor)] lg:text-[var(--corLetra2)]">
                 Emídio & Sá
               </h2>
-              <p className="respoFont text-[.6rem] lg:text-xs text-[var(--primeira-cor)] lg:text-[var(--corLetra2)]">
+              <p className="text-xs text-[var(--primeira-cor)] lg:text-[var(--corLetra2)]">
                 CUIDANDO DE SUA SAÚDE
               </p>
             </div>
-          </div>
+          </section>
         </div>
-      </div>
-      <div className="absolute w-full group md:flex-row gap-4 d:bg-transparent py-[25px] md:py-[5px] p-2 m-auto ">
-        <RxHamburgerMenu className="md:hidden text-3xl cursor-pointer" />
-        <div className="
-            hidden absolute md:relative w-full 
-            group-hover:block  md:flex  md:gap-2 
-            left-0 top-[80px] md:top-0 md:left-[20.4rem] lg:left-[29.5rem]
-            bg-[var(--corSombra2)] md:bg-[var(--corFundo2)] "
+
+        {/* Botão mobile */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden text-3xl text-[var(--corLetra)]"
+          aria-label="Abrir menu"
+          aria-expanded={isOpen}
+          aria-controls="nav-menu"
         >
-          <div className=" 
-            w-full flex flex-col md:flex-row  p-2 text-center md:gap-2 lg:gap-8 
-            text-[var(--corFundo)] md:text-[var(--corLetra)] font-[var(--font1)]"
-          >
-            <Link href={"/"} className="linkNav ">
-              Início
-            </Link>
-            <Link href={"/massoterapia"} className="linkNav ">
-              Massoterapia
-            </Link>
-            <Link href={"/pisicologia"} className="linkNav ">
-              Pisicologia
-            </Link>
-            <Link href={"/sobre"} className="linkNav ">
-              Sobre Nós
-            </Link>
-            <Link href={"/contato"} className="linkNav ">
-              Contato
-            </Link>
-          </div>
+          <RxHamburgerMenu />
+        </button>
+
+        {/* Links */}
+        <div
+          id="nav-menu"
+          className={`${
+            isOpen ? "block" : "hidden"
+          } absolute top-[80px] left-0 w-full bg-[var(--corSombra2)] lg:bg-transparent lg:static lg:flex lg:items-center lg:justify-end`}
+        >
+          <ul className="flex flex-col lg:flex-row gap-2 lg:gap-8 text-center text-[var(--corFundo)] lg:text-[var(--corLetra)] font-[var(--font1)] p-4 lg:p-0">
+            {NavFields.map((link) => (
+              <li key={link.text}>
+                <Link
+                  href={link.href}
+                  className="linkNav block py-2"
+                >
+                  {link.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
 

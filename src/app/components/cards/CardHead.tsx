@@ -1,59 +1,52 @@
-//Módulos.
-import Image from "next/image";
-import Link from "next/link";
+// Módulos.
+import Image, { StaticImageData } from "next/image";
+import CardDetalhes from "./CardDetalhes";
 
 interface PropsCardHead {
-  image?: any;
-  logo?: any;
+  image: StaticImageData | string;
   testo?: string;
   descrição?: string;
   muda?: string;
   tamanho?: string;
-  nome?: string;
-  fone?: string;
-  email?: string;
-  data?: any;
-  especialidade?: string;
-  mensagem?: string;
   botao?: boolean;
-  formulário?: boolean;
 }
 
 export default function CardHead(props: PropsCardHead) {
   return (
-    <div className="relative w-full  z-0 h-[270px] md:h-[450px] ">
+    <figure className="relative w-full h-[270px] md:h-[500px] overflow-hidden bg-cover z-0">
       <Image
         src={props.image}
-        alt="Background"
-        layout="fill"
-        objectFit="cover"
+        alt="" // imagem decorativa
+        role="presentation"
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         quality={100}
         priority
-        className=""
+        aria-hidden="true"
       />
-      <div className="relative z-10 flex justify-between pt-12 md:pt-24 lg:pt-40 h-full bg-[var(--corSombra2)] lg:bg-[var(--corSombra)] w-full">
-        <div className={`w-[50%]   hidden ${props.muda}`}></div>
-        <div className={`z-20  ${props.tamanho}`}>
-          <div className="alinha6">
-            <h1 className="TestoHeader text-[2rem] md:text-[3.2rem] lg:text-[3.5rem] text-center p-1  md:p-0">
-              {props.testo}
-            </h1>
-            <p className=" TestoP w-[95%] md:text-[1.3rem] lg:text-[1.3rem] text-[1.1rem] md:w-[60%]  lg:w-[85%] text-center">
-              {props.descrição}
-            </p>
-            {!props.botao && (
-              <div className=" alinha3 gap-3 md:gap-14 pt-4 md:pt-4">
-                <Link href={"/contato"} className="linkHead ">
-                  Agende um horário
-                </Link>
-                <Link href={"/sobre"} className="linkHead">
-                  Saiba mais..
-                </Link>
-              </div>
+
+      <div className="relative flex justify-between pt-12 md:pt-24 lg:pt-40 h-full bg-[var(--corSombra2)] lg:bg-[var(--corSombra)] w-full">
+        {/* Bloco visual à esquerda - apenas se precisar ser exibido */}
+        <div className={`w-1/2 hidden ${props.muda}`}></div>
+
+        {/* Conteúdo textual */}
+        <div className={`relative ${props.tamanho}`} role="region" aria-label="Seção de destaque">
+          <figcaption className="flex flex-col items-center text-center gap-4">
+            {props.testo && (
+              <h1 className="text-[2rem] md:text-[3.2rem] lg:text-[3rem] text-[var(--corLetra2)] font-bold">
+                {props.testo}
+              </h1>
             )}
-          </div>
+            {props.descrição && (
+              <p className="text-[1.1rem] md:text-[1.3rem] lg:text-[1.3rem] text-[var(--fundoBotao)] w-[95%] md:w-[60%] lg:w-[85%]">
+                {props.descrição}
+              </p>
+            )}
+            {!props.botao && <CardDetalhes />}
+          </figcaption>
         </div>
       </div>
-    </div>
+    </figure>
   );
 }
