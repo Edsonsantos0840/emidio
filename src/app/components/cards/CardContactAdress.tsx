@@ -15,7 +15,7 @@ export default function CardContactAdress() {
         <ul className="space-y-4 text-letra mt-6">
           {
             AdressFields.map((link, index) => (
-              <li key={index}>
+              <li key={index} className="text-lg md:text-base">
                 <Link 
                   href={link.href}
                   target="_blank"

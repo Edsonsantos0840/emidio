@@ -47,7 +47,7 @@ input, select, textarea{
     @apply hover:scale-105 p-1 respoFont text-lg lg:text-xl md:hover:bg-corLetra md:hover:text-fundo
   }
   .titulo {
-    @apply text-letra2 text-lg md:text-[2.4rem] lg:text-[1.2rem] text-center lg:text-start
+    @apply text-letra2 text-xl md:text-2xl lg:text-[1.2rem] text-center md:text-start
   }
   .TestoP {
     @apply respoFont text-[#dbefc8] mt-[-10]
@@ -56,13 +56,13 @@ input, select, textarea{
     @apply text-5xl text-[#dbefc8] hover:scale-110
   }
   .linkHead {
-    @apply bg-[#dbefc8] text-letra2 hover:bg-letra2 hover:text-[#dbefc8] p-1 rounded-sm border-2 border-letra2 shadow-md lg:w-[18vw] md:w-[40vw] w-[48vw] text-[1.1rem] md:text-[1.4rem] lg:text-[1.2rem]  text-center respoFont font-semibold hover:scale-105 ease-in duration-300
+    @apply bg-[#dbefc8] text-letra2 hover:bg-letra2 hover:text-[#dbefc8] p-1 rounded-sm border-2 border-letra2 shadow-md lg:w-[18vw] md:w-[40vw] w-[45vw] text-[1rem] md:text-[1.4rem] lg:text-[1.2rem]  text-center respoFont font-semibold hover:scale-105 ease-in duration-300
   }
   .topoInfo {
     @apply w-full  bg-fundoCard2 shadow-2xl rounded-lg border-2 border-letra2 gap-2 ease-in duration-700 p-1 
   }
   .topoInfo2 {
-    @apply xl:flex w-full gap-2 group-hover:bg-fundoCard
+    @apply md:flex w-full gap-2 group-hover:bg-fundoCard
   }
   .imgInfo {
     @apply shadow-lg rounded-l-md w-full xl:group-hover:h-[100%] xl:group-hover:w-[350px]

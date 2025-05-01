@@ -7,7 +7,7 @@ import { EspecificoFields } from "./fields/EspecificoFields";
 
 export default function Home() {
   return (
-    <main className="alinha min-h-screen pt-16">
+    <main className="alinha  pt-16">
       <CardHead
         image="/image/4 copy.png"
         testo="Saúde do corpo e da mente."
@@ -16,8 +16,8 @@ export default function Home() {
         tamanho="md:w-[100%] lg:w-[58%] xl:w-[50%]"
       />
 
-      <header className="text-center mt-6">
-        <h3 className="py-5 font-fontPrincipal text-corLetra text-2xl">
+      <header className="text-center md:mt-6">
+        <h3 className="py-5 font-fontPrincipal text-corLetra text-3xl md:text-2xl">
           <span className="md:hidden">Áreas que Trabalhamos.</span>
           <span className="hidden md:block">
             ______________Áreas que Trabalhamos.______________
@@ -32,7 +32,7 @@ export default function Home() {
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 gap-2 transition-all ease-in duration-700">
           {EspecificoFields.map((item, i) => (
             <li
-              key={item.artigos[0] || i}
+              key={item.artigos[i]}
               className="transition-all ease-in-out duration-700"
             >
               <CardEspecifico
@@ -46,14 +46,14 @@ export default function Home() {
 
           {/* Card Fixo Final */}
           <li
-            className="p-4 bg-fundoCard rounded-md shadow-md transition-all duration-700 ease-in"
+            className="p-4 bg-fundoCard md:hidden lg:block rounded-md shadow-md transition-all duration-700 ease-in"
             aria-label="Mensagem de encerramento sobre autocuidado"
           >
             <article>
-              <h2 className="text-letra2 text-lg md:text-[2.1rem] lg:text-[1.5rem] text-center respoFont mt-10">
+              <h2 className=" text-corLetra lg:text-letra2 text-[1.6rem] lg:text-[1.5rem] text-center respoFont lg:mt-10">
                 Você sofre desses males? Podemos te ajudar.
               </h2>
-              <p className="respoFont md:text-[1.6rem] lg:text-[1rem] mt-10 w-[80%] m-auto text-center">
+              <p className="respoFont lg:text-[1rem] mt-10 lg:w-[80%] m-auto text-center">
                 Tanto a massoterapia quanto a psicologia são recursos valiosos
                 para cuidarmos de nós mesmos de maneira integral. Enquanto a
                 massoterapia foca no relaxamento físico, a psicologia nos

@@ -35,7 +35,7 @@ export default function Contato({texto, descrição, botao}: PropsCardHead) {
         <div className="absolute inset-0 bg-gradient-to-l from-corSombra via-[#124022] via-100% to-transparent"></div>
 
         {/* Conteúdo (textos e botões) alinhado à direita */}
-        <div className="md:flex justify-center items-center w-full ">
+        <div className="md:flex justify-center items-center w-full mt-14 md:mt-6 ">
           <div className="relative z-10 text-principal drop-shadow-xl text-justify px-6 lg:px-12 w-full lg:max-w-[50%] mt-3">
             <h2
               id="contact-card-title"

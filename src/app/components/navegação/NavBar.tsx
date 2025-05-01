@@ -33,14 +33,14 @@ function NavBar() {
             aria-label="Marca do site"
             className="flex justify-start items-baseline gap-2 w-full"
           >
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">
+            <h1 className="text-4xl text-corLetra md:text-2xl lg:text-3xl font-bold">
               Espaço
             </h1>
             <div>
-              <h2 className="text-lg md:text-xl lg:text-2xl text-letra3 lg:text-letra2">
+              <h2 className="text-3xl md:text-xl lg:text-2xl text-corLetra lg:text-letra2">
                 Emídio & Sá
               </h2>
-              <p className="text-xs text-principal lg:text-principal">
+              <p className="text-xs text-corLetra lg:text-principal font-terceiraFont">
                 CUIDANDO DE SUA SAÚDE
               </p>
             </div>
@@ -63,12 +63,12 @@ function NavBar() {
           id="nav-menu"
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-[80px] left-0 w-full bg-corSombra lg:bg-transparent lg:static lg:flex lg:items-center lg:justify-end`}
+          } absolute top-[70px] left-0 w-full bg-corSombra lg:bg-transparent lg:static lg:flex lg:items-center lg:justify-end`}
         >
           <ul className="flex flex-col lg:flex-row gap-2 lg:gap-8 text-center text-fundo lg:text-corLetra font-fontPrincipal p-4 lg:p-0">
             {NavFields.map((link) => (
               <li key={link.text}>
-                <Link href={link.href} className="linkNav block py-2">
+                <Link href={link.href} className="linkNav block py-1">
                   {link.text}
                 </Link>
               </li>

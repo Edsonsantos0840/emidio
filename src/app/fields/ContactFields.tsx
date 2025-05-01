@@ -12,7 +12,7 @@ interface ContactProps {
 export const ContactFields: ContactProps[] = [
   {
     ico: (
-      <FaUser className="absolute right-3 top-1/2 transform -translate-y-1/2 text-icoInput" />
+      <FaUser className="absolute right-3 text-xl md:text-base top-1/2 transform -translate-y-1/2 text-icoInput" />
     ),
     type: "text",
     name: "nome",
@@ -21,7 +21,7 @@ export const ContactFields: ContactProps[] = [
   },
   {
     ico: (
-      <FaEnvelope className="absolute right-3 top-1/2 transform -translate-y-1/2 text-icoInput" />
+      <FaEnvelope className="absolute right-3 text-xl md:text-base top-1/2 transform -translate-y-1/2 text-icoInput" />
     ),
     type: "email",
     name: "email",
@@ -30,7 +30,7 @@ export const ContactFields: ContactProps[] = [
   },
   {
     ico: (
-      <FaPhone className="absolute right-3 top-1/2 transform -translate-y-1/2 text-icoInput" />
+      <FaPhone className="absolute right-3 text-xl md:text-base top-1/2 transform -translate-y-1/2 text-icoInput" />
     ),
     type: "tel",
     name: "telefone",
@@ -40,13 +40,13 @@ export const ContactFields: ContactProps[] = [
   {
     ico: (
       <svg
-        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-icoInput pointer-events-none "
+        className="absolute right-3 text-xl md:text-base top-1/2 transform -translate-y-1/2 text-icoInput pointer-events-none "
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        width="20"
-        height="20"
+        width="24"
+        height="24"
       >
         <path
           strokeLinecap="round"

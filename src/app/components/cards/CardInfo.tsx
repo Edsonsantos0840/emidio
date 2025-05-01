@@ -17,7 +17,7 @@ export default function CardInfo(props: CardInfoProps) {
     >
       <div className="topoInfo2">
         {/* Imagem com legenda semântica */}
-        <figure className="relative w-[200px] h-[200px] group-hover:w-[300px] group-hover:h-[300px]">
+        <figure className="relative w-[420px] h-[420px] lg:group-hover:w-[300px] lg:group-hover:h-[300px]">
           <Image
             src={props.imagem}
             alt={`Imagem ilustrativa sobre ${props.titulo}`}
@@ -36,13 +36,13 @@ export default function CardInfo(props: CardInfoProps) {
             {props.titulo}
           </h2>
 
-          <p className="group-hover:hidden text-center p-2 respoFont md:text-[1.3rem] lg:text-[1rem]">
+          <p className="group-hover:hidden text-center p-2 respoFont md:text-[1.1rem] lg:text-[1rem]">
             {props.texto}
           </p>
 
           {/* Lista visível no hover */}
           <ul
-            className="hidden group-hover:flex flex-col gap-1 m-auto p-2 text-center md:text-justify md:text-[1.3rem] lg:text-[1rem]"
+            className="hidden group-hover:flex flex-col gap-1 m-auto p-2 text-center md:text-justify md:text-[1rem] lg:text-[1rem]"
             aria-label={`Mais detalhes sobre ${props.titulo}`}
           >
             {props.artigos.map((artigo, index) => (

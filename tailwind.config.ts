@@ -20,7 +20,7 @@ const config: Config = {
         'fundo': '#fff',
         'fundoCard': 'rgba(167, 234, 35, .412)',
         'fundoCard2': '#acff2f27',
-        'corSombra': '#1240229c',
+        'corSombra': '#081d0fdb',
         'sombra': '#124022cc',
         'corLetra': '#124020',
         'corEspecial': '#aaff00',

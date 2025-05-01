@@ -99,7 +99,7 @@ function Massoterapia() {
       </section>
 
       {/* Título para os tratamentos */}
-      <h2 className="text-letra2 text-2xl md:text-3xl text-center py-8">
+      <h2 className="text-letra2 text-3xl text-center py-8">
         Tratamentos da Massoterapia
       </h2>
       <hr />
