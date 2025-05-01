@@ -26,20 +26,24 @@ export default function CardHead(props: PropsCardHead) {
         aria-hidden="true"
       />
 
-      <div className="relative flex justify-between pt-12 md:pt-24 lg:pt-40 h-full bg-[var(--corSombra2)] lg:bg-[var(--corSombra)] w-full">
+      <div className="relative flex justify-between pt-12 md:pt-24 lg:pt-40 h-full bg-sombra lg:bg-corSombra w-full">
         {/* Bloco visual à esquerda - apenas se precisar ser exibido */}
         <div className={`w-1/2 hidden ${props.muda}`}></div>
 
         {/* Conteúdo textual */}
-        <div className={`relative ${props.tamanho}`} role="region" aria-label="Seção de destaque">
+        <div
+          className={`relative ${props.tamanho}`}
+          role="region"
+          aria-label="Seção de destaque"
+        >
           <figcaption className="flex flex-col items-center text-center gap-4">
             {props.testo && (
-              <h1 className="text-[2rem] md:text-[3.2rem] lg:text-[3rem] text-[var(--corLetra2)] font-bold">
+              <h1 className="text-[2rem] md:text-[3.2rem] lg:text-[3rem] text-letra2 font-bold">
                 {props.testo}
               </h1>
             )}
             {props.descrição && (
-              <p className="text-[1.1rem] md:text-[1.3rem] lg:text-[1.3rem] text-[var(--fundoBotao)] w-[95%] md:w-[60%] lg:w-[85%]">
+              <p className="text-[1.1rem] md:text-[1.3rem] lg:text-[1.3rem] text-[#dbefc8] w-[95%] md:w-[60%] lg:w-[85%]">
                 {props.descrição}
               </p>
             )}

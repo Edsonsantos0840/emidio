@@ -14,7 +14,7 @@ function Piscologia() {
         tamanho={"md:w-[160%] lg:w-[67%] xl:w-[50%]"}
       />
       <section className="m-auto w-[99%] lg:w-[90%] p-1 py-8">
-        <h2 className="text-[var(--corLetra2)] text-2xl md:text-3xl  text-center respoFont">
+        <h2 className="text-letra2 text-2xl md:text-3xl  text-center respoFont">
           O que é Psicologia?
         </h2>
         <p className="respoFont text-center md:text-[1.3rem] lg:text-[1rem]">
@@ -31,7 +31,7 @@ function Piscologia() {
           entendimento e a melhoria da qualidade de vida das pessoas.
         </p>
       </section>
-      <h2 className="text-[var(--corLetra2)] text-3xl  text-center  ease-in duration-700 respoFont">
+      <h2 className="text-letra2 text-3xl  text-center  ease-in duration-700 respoFont">
         Tratamentos da Psicologia
       </h2>
       <hr />

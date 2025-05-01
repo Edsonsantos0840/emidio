@@ -17,7 +17,7 @@ export default function Home() {
       />
 
       <header className="text-center mt-6">
-        <h3 className="py-5 font-fontPrincipal text-[var(--corLetra)] text-2xl">
+        <h3 className="py-5 font-fontPrincipal text-corLetra text-2xl">
           <span className="md:hidden">Áreas que Trabalhamos.</span>
           <span className="hidden md:block">
             ______________Áreas que Trabalhamos.______________
@@ -46,11 +46,11 @@ export default function Home() {
 
           {/* Card Fixo Final */}
           <li
-            className="p-4 bg-[var(--fundoCard2)] rounded-md shadow-md transition-all duration-700 ease-in"
+            className="p-4 bg-fundoCard rounded-md shadow-md transition-all duration-700 ease-in"
             aria-label="Mensagem de encerramento sobre autocuidado"
           >
             <article>
-              <h2 className="text-[var(--corLetra2)] text-lg md:text-[2.1rem] lg:text-[1.5rem] text-center respoFont mt-10">
+              <h2 className="text-letra2 text-lg md:text-[2.1rem] lg:text-[1.5rem] text-center respoFont mt-10">
                 Você sofre desses males? Podemos te ajudar.
               </h2>
               <p className="respoFont md:text-[1.6rem] lg:text-[1rem] mt-10 w-[80%] m-auto text-center">

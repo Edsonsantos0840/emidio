@@ -26,7 +26,7 @@ function Sobre() {
         >
           <h2
             id="titulo-psicologia"
-            className="text-3xl font-semibold mb-4 text-[var(--corLetra2)] respoFont"
+            className="text-3xl font-semibold mb-4 text-letra2 respoFont"
           >
             Psicologia
           </h2>
@@ -46,16 +46,20 @@ function Sobre() {
             />
           </figure>
 
-          <p className="hidden text-gray-600 leading-relaxed text-center mb-4 group-hover:block md:text-[1.3rem] lg:text-[1rem] respoFont">
-            Nossa psicóloga está aqui para oferecer orientação e apoio emocional. Trabalhamos com sessões individuais e terapias focadas em ajudar você a explorar seus pensamentos, sentimentos e comportamentos, promovendo o autoconhecimento e o crescimento pessoal.
+          <p className="hidden icoInput leading-relaxed text-center mb-4 group-hover:block md:text-[1.3rem] lg:text-[1rem] respoFont">
+            Nossa psicóloga está aqui para oferecer orientação e apoio
+            emocional. Trabalhamos com sessões individuais e terapias focadas em
+            ajudar você a explorar seus pensamentos, sentimentos e
+            comportamentos, promovendo o autoconhecimento e o crescimento
+            pessoal.
           </p>
 
           <Link
             href="/contato"
             aria-label="Agendar horário com psicólogo"
-            className="focus:outline-none focus:ring-2 focus:ring-[var(--corLetra2)] focus:ring-offset-2
-              bg-[var(--corLetra2)] text-[var(--corFundo)] hover:bg-[var(--corFundo)] hover:text-[var(--corLetra2)]
-              p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md w-[40vw] md:w-[40vw] lg:w-[18vw]
+            className="focus:outline-none focus:ring-2 focus:ring-letra2 focus:ring-offset-2
+              bg-letra2 text-fundo hover:bg-fundo hover:text-letra2
+              p-1 rounded-sm border-2 border-letra2 shadow-md w-[40vw] md:w-[40vw] lg:w-[18vw]
               text-[1rem] md:text-[1.3rem] lg:text-[1.1rem] text-center font-semibold hover:scale-105
               ease-in duration-300 respoFont"
           >
@@ -70,7 +74,7 @@ function Sobre() {
         >
           <h2
             id="titulo-massoterapia"
-            className="text-3xl font-semibold mb-4 text-[var(--corLetra2)] respoFont"
+            className="text-3xl font-semibold mb-4 text-letra2 respoFont"
           >
             Massoterapia
           </h2>
@@ -90,16 +94,19 @@ function Sobre() {
             />
           </figure>
 
-          <p className="hidden text-gray-600 leading-relaxed text-center mb-4 group-hover:block md:text-[1.3rem] lg:text-[1rem] respoFont">
-            Nosso terapeuta especializado oferece técnicas variadas para aliviar tensões musculares, melhorar a circulação e promover um relaxamento profundo. As sessões são personalizadas para atender às suas necessidades específicas.
+          <p className="hidden icoInput leading-relaxed text-center mb-4 group-hover:block md:text-[1.3rem] lg:text-[1rem] respoFont">
+            Nosso terapeuta especializado oferece técnicas variadas para aliviar
+            tensões musculares, melhorar a circulação e promover um relaxamento
+            profundo. As sessões são personalizadas para atender às suas
+            necessidades específicas.
           </p>
 
           <Link
             href="/contato"
             aria-label="Agendar horário com terapeuta"
-            className="focus:outline-none focus:ring-2 focus:ring-[var(--corLetra2)] focus:ring-offset-2
-              bg-[var(--corLetra2)] text-[var(--corFundo)] hover:bg-[var(--corFundo)] hover:text-[var(--corLetra2)]
-              p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md w-[40vw] md:w-[26vw] lg:w-[18vw]
+            className="focus:outline-none focus:ring-2 focus:ring-letra2 focus:ring-offset-2
+              bg-letra2 text-fundo hover:bg-fundo hover:text-letra2
+              p-1 rounded-sm border-2 border-letra2 shadow-md w-[40vw] md:w-[26vw] lg:w-[18vw]
               text-[1rem] md:text-[1.3rem] lg:text-[1.1rem] text-center font-semibold hover:scale-105
               ease-in duration-300 respoFont"
           >

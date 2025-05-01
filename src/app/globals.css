@@ -2,51 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --corFundo: #fff;
-  --corFundo2: #ffffff00;
-  --primeira-cor: #1C5931;
-  --corLetra: #124020;
-  --corLetra2: #9acd32;
-  --fundoBotao: #dbefc8;
-  --fundoCard2: rgba(167, 234, 35, .412);
-  --fundoCard1: #e5e7eb;
-  --fundoCard3: #acff2f27;
-  --corSombra: #1240229c;
-  --corSombra2: #124022cc;
-  --terceira-cor: rgb(159, 226, 24);
-  --letra1-cor: #aaff00;
-  --letra-cor: #cbffdd;
-  --letra3-cor: #369927;
-  --letra2-cor: #9BBFAB;
-  --letra4-cor: #5E8C72;
-
-  --font1: font-family: 'Caveat', cursive;
-  --font2: font-family: fantasy;
-  --font3: font-family: Arial, Helvetica, sans-serif;
-  
-  }
   *{
     font-family: 'Caveat', cursive;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-.TestoHeader {
-  font-family: fantasy;
-  color: var(--corLetra2) ;
-  text-shadow: 2px 2px 3px #00000059;
-}
 
 
 img {
@@ -83,25 +44,25 @@ input, select, textarea{
     @apply flex flex-col justify-around items-center
   }
   .linkNav {
-    @apply hover:scale-105 p-1 respoFont text-lg lg:text-xl md:hover:bg-[var(--corLetra)] md:hover:text-[var(--corFundo)]
+    @apply hover:scale-105 p-1 respoFont text-lg lg:text-xl md:hover:bg-corLetra md:hover:text-fundo
   }
   .titulo {
-    @apply text-[var(--corLetra2)] text-lg md:text-[2.4rem] lg:text-[1.2rem] text-center lg:text-start
+    @apply text-letra2 text-lg md:text-[2.4rem] lg:text-[1.2rem] text-center lg:text-start
   }
   .TestoP {
-    @apply respoFont text-[var(--fundoBotao)] mt-[-10]
+    @apply respoFont text-[#dbefc8] mt-[-10]
   }
   .headerIcone {
-    @apply text-5xl text-[var(--fundoBotao)] hover:scale-110
+    @apply text-5xl text-[#dbefc8] hover:scale-110
   }
   .linkHead {
-    @apply bg-[var(--fundoBotao)] text-[var(--corLetra2)] hover:bg-[var(--corLetra2)] hover:text-[var(--fundoBotao)] p-1 rounded-sm border-2 border-[var(--corLetra2)] shadow-md lg:w-[18vw] md:w-[40vw] w-[48vw] text-[1.1rem] md:text-[1.4rem] lg:text-[1.2rem]  text-center respoFont font-semibold hover:scale-105 ease-in duration-300
+    @apply bg-[#dbefc8] text-letra2 hover:bg-letra2 hover:text-[#dbefc8] p-1 rounded-sm border-2 border-letra2 shadow-md lg:w-[18vw] md:w-[40vw] w-[48vw] text-[1.1rem] md:text-[1.4rem] lg:text-[1.2rem]  text-center respoFont font-semibold hover:scale-105 ease-in duration-300
   }
   .topoInfo {
-    @apply w-full  bg-[var(--fundoCard3)] shadow-2xl rounded-lg border-2 border-[var(--corLetra2)] gap-2 ease-in duration-700 p-1 
+    @apply w-full  bg-fundoCard2 shadow-2xl rounded-lg border-2 border-letra2 gap-2 ease-in duration-700 p-1 
   }
   .topoInfo2 {
-    @apply xl:flex w-full gap-2 group-hover:bg-[var(--fundoCard2)]
+    @apply xl:flex w-full gap-2 group-hover:bg-fundoCard
   }
   .imgInfo {
     @apply shadow-lg rounded-l-md w-full xl:group-hover:h-[100%] xl:group-hover:w-[350px]

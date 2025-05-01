@@ -10,7 +10,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full z-30 bg-[var(--corFundo)] shadow-lg">
+    <header className="fixed w-full z-30 bg-fundo shadow-lg">
       <nav
         className="container mx-auto flex justify-between items-center h-[70px] px-4"
         role="navigation"
@@ -37,10 +37,10 @@ function NavBar() {
               Espaço
             </h1>
             <div>
-              <h2 className="text-lg md:text-xl lg:text-2xl text-[var(--letra3-cor)] lg:text-[var(--corLetra2)]">
+              <h2 className="text-lg md:text-xl lg:text-2xl text-letra3 lg:text-letra2">
                 Emídio & Sá
               </h2>
-              <p className="text-xs text-[var(--primeira-cor)] lg:text-[var(--corLetra2)]">
+              <p className="text-xs text-principal lg:text-principal">
                 CUIDANDO DE SUA SAÚDE
               </p>
             </div>
@@ -50,7 +50,7 @@ function NavBar() {
         {/* Botão mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-3xl text-[var(--corLetra)]"
+          className="lg:hidden text-3xl text-corLetra"
           aria-label="Abrir menu"
           aria-expanded={isOpen}
           aria-controls="nav-menu"
@@ -63,15 +63,12 @@ function NavBar() {
           id="nav-menu"
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-[80px] left-0 w-full bg-[var(--corSombra2)] lg:bg-transparent lg:static lg:flex lg:items-center lg:justify-end`}
+          } absolute top-[80px] left-0 w-full bg-corSombra lg:bg-transparent lg:static lg:flex lg:items-center lg:justify-end`}
         >
-          <ul className="flex flex-col lg:flex-row gap-2 lg:gap-8 text-center text-[var(--corFundo)] lg:text-[var(--corLetra)] font-[var(--font1)] p-4 lg:p-0">
+          <ul className="flex flex-col lg:flex-row gap-2 lg:gap-8 text-center text-fundo lg:text-corLetra font-fontPrincipal p-4 lg:p-0">
             {NavFields.map((link) => (
               <li key={link.text}>
-                <Link
-                  href={link.href}
-                  className="linkNav block py-2"
-                >
+                <Link href={link.href} className="linkNav block py-2">
                   {link.text}
                 </Link>
               </li>
