@@ -8,7 +8,6 @@ import CardContactAdress from "../components/cards/CardContactAdress";
 import CardMor from "../components/cards/CardMor";
 
 interface PropsCardHead {
-  image: string;
   texto?: string;
   descrição?: string;
   botao?: boolean;
