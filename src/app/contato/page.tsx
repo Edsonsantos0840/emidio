@@ -7,13 +7,12 @@ import { SocialMediaFields } from "../fields/SocialMediaFields";
 import CardContactAdress from "../components/cards/CardContactAdress";
 import CardMor from "../components/cards/CardMor";
 
-interface PropsCardHead {
+
+export default function Contato({texto, descrição, botao}: {
   texto?: string;
   descrição?: string;
   botao?: boolean;
-}
-
-export default function Contato({texto, descrição, botao}: PropsCardHead) {
+}) {
   return (
     <main className="min-h-screen w-full  lg:alinha3">
       <section
