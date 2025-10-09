@@ -44,7 +44,7 @@ input, select, textarea{
     @apply flex flex-col justify-around items-center
   }
   .linkNav {
-    @apply hover:scale-105 p-1 respoFont text-lg lg:text-xl md:hover:bg-corLetra md:hover:text-fundo
+    @apply hover:scale-105 p-1 respoFont text-lg  md:hover:bg-corLetra md:hover:text-fundo
   }
   .titulo {
     @apply text-letra2 text-xl md:text-2xl lg:text-[1.2rem] text-center md:text-start
