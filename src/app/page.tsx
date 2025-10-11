@@ -2,18 +2,18 @@
 
 // Componentes
 import CardHead from "./components/cards/CardHead";
-import CardEspecifico from "./components/cards/CardEspecifico";
-import { EspecificoFields } from "./fields/EspecificoFields";
+import FlipCardEmidio from "./components/cards/flipCard/FlipCardEmidio";
+import { CardsFields } from "./fields/CardsFields";
 
 export default function Home() {
   return (
-    <main className="alinha  pt-16">
+    <main className="alinha  pt-12">
       <CardHead
         image="/image/4 copy.png"
         testo="Saúde do corpo e da mente."
         descrição="Determinação e satisfação em oferecer o melhor para nossos pacientes."
         muda="hidden"
-        tamanho="md:w-[100%] lg:w-[58%] xl:w-[50%]"
+        tamanho="md:w-[100%] lg:w-[65%] xl:w-[55%]"
       />
 
       <header className="text-center md:mt-6">
@@ -29,31 +29,22 @@ export default function Home() {
         aria-label="Lista de especialidades e tratamentos oferecidos"
         className="w-full md:alinha2 md:px-5 transition-all ease-in duration-700"
       >
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 gap-2 transition-all ease-in duration-700">
-          {EspecificoFields.map((item, i) => (
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 transition-all ease-in duration-700">
+          {
+          CardsFields &&
+            CardsFields.map((item, i) => (
+            <FlipCardEmidio key={i} image={item.image} title={item.title} articles={item.articles} agenda={item.agenda}/>
+            ))}
+            {/* Card Fixo Final */}
             <li
-              key={item.artigos[i]}
-              className="transition-all ease-in-out duration-700"
-            >
-              <CardEspecifico
-                imagem={item.imagem}
-                titulo={item.titulo}
-                artigos={item.artigos.filter(Boolean)}
-                agenda={item.agenda}
-              />
-            </li>
-          ))}
-
-          {/* Card Fixo Final */}
-          <li
-            className="p-4 bg-fundoCard md:hidden lg:block rounded-md shadow-md transition-all duration-700 ease-in"
+            className="p-4 bg-fundoCard col-span-2 md:hidden lg:block rounded-md shadow-md transition-all duration-700 ease-in"
             aria-label="Mensagem de encerramento sobre autocuidado"
           >
-            <article>
-              <h2 className=" text-corLetra lg:text-letra2 text-[1.6rem] lg:text-[1.5rem] text-center respoFont lg:mt-10">
+            <article className="px-4">
+              <h2 className=" text-corLetra lg:text-letra2 text-[1.6rem] text-center respoFont lg:mt-10">
                 Você sofre desses males? Podemos te ajudar.
               </h2>
-              <p className="respoFont lg:text-[1rem] mt-10 lg:w-[80%] m-auto text-center">
+              <p className="respoFont lg:text-[1.1rem] mt-10 lg:w-full m-auto text-justify">
                 Tanto a massoterapia quanto a psicologia são recursos valiosos
                 para cuidarmos de nós mesmos de maneira integral. Enquanto a
                 massoterapia foca no relaxamento físico, a psicologia nos

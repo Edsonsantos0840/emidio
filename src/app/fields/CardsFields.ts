@@ -1,15 +1,15 @@
-interface EspecificoProps {
-  imagem: string;
-  titulo: string;
-  artigos: string[];
+export interface CardsProps {
+  image: string;
+  title: string;
+  articles: string[];
   agenda: string;
 }
 
-export const EspecificoFields: EspecificoProps[] = [
+export const CardsFields: CardsProps[] = [
   {
-    imagem: "/image/fibromialgia.png",
-    titulo: "Dores no corpo. ",
-    artigos: [
+    image: "/image/fibromialgia.png",
+    title: "Dores no corpo. ",
+    articles: [
       "Limitações na funcionalidade.",
       "Dificuldades no estudos.",
       "Alterações emocionais.",
@@ -24,9 +24,9 @@ export const EspecificoFields: EspecificoProps[] = [
     agenda: "Agende um Horário",
   },
   {
-    imagem: "/image/estresse e Ansiedade.png",
-    titulo: "Estresse e Ansiedade ",
-    artigos: [
+    image: "/image/estresse e Ansiedade.png",
+    title: "Estresse e Ansiedade ",
+    articles: [
       "Doenças Cardiovasculares.",
       "Distúrbios Digestivos.",
       "Problemas Imunológicos.",
@@ -41,9 +41,9 @@ export const EspecificoFields: EspecificoProps[] = [
     agenda: "Agende um Horário",
   },
   {
-    imagem: "/image/Recuperação de Lesões 2.png",
-    titulo: "Recuperação de Lesões",
-    artigos: [
+    image: "/image/recuperacao_de_Lesoes.png",
+    title: "Recuperação de Lesões",
+    articles: [
       "Dor e desconforto.",
       "Inflamação. ",
       "Debilidade Muscular. ",
@@ -58,9 +58,9 @@ export const EspecificoFields: EspecificoProps[] = [
     agenda: "Agende um Horário",
   },
   {
-    imagem: "/image/depressão3.png",
-    titulo: "Depressão, Traumas e Transtornos ",
-    artigos: [
+    image: "/image/depressao3.png",
+    title: "Depressão, Traumas e Transtornos",
+    articles: [
       "Sofrimento emocional.",
       "Isolamento social.",
       "Dificuldades no trabalho e estudos. ",
@@ -75,9 +75,9 @@ export const EspecificoFields: EspecificoProps[] = [
     agenda: "Agende um Horário",
   },
   {
-    imagem: "/image/Circulação Sanguínea.png",
-    titulo: "circulação sanguínea ",
-    artigos: [
+    image: "/image/circulacao_sanguinea.png",
+    title: "circulação sanguínea ",
+    articles: [
       "Dor desconforto nas extremidades.",
       "Pele pálida ou azulada. ",
       "Inchaço. ",
@@ -92,9 +92,9 @@ export const EspecificoFields: EspecificoProps[] = [
     agenda: "Agende um Horário",
   },
   {
-    imagem: "/image/Flexibilidade e Amplitude de Movimento.png",
-    titulo: "Reabilitação e recuperação dos movimentos",
-    artigos: [
+    image: "/image/Flexibilidade e Amplitude de Movimento.png",
+    title: "Recuperação dos movimentos",
+    articles: [
       "Acidente Vascular Cerebral (AVC).",
       "Esclerose Múltipla (EM).",
       "Lesão Medular. ",
@@ -109,9 +109,9 @@ export const EspecificoFields: EspecificoProps[] = [
     agenda: "Agende um Horário",
   },
   {
-    imagem: "/image/desenvolvimento Pessoal.png",
-    titulo: "Crescimento pessoal",
-    artigos: [
+    image: "/image/desenvolvimento Pessoal.png",
+    title: "Crescimento pessoal",
+    articles: [
       "Medo do Fracasso.",
       "Falta de Autodisciplina. ",
       "Falta de Recursos. ",

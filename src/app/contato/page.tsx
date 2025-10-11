@@ -1,4 +1,4 @@
-import CardContato from "../components/cards/CardContato";
+import CardContato from "./CardContato";
 
 export default function Contato() {
   return (

@@ -5,13 +5,13 @@ import { PiscologiaFields } from "../fields/PiscologiaFields";
 
 function Piscologia() {
   return (
-    <main className="alinha min-h-screen pt-16">
+    <main className="alinha min-h-screen pt-12">
       <CardHead
         image={ima}
         testo="Saúde do corpo e da mente."
         descrição="Determinação e satisfação em oferecer o melhor para nossos paciêntes."
         muda={"md:block"}
-        tamanho={"md:w-[160%] lg:w-[67%] xl:w-[50%]"}
+        tamanho={"md:w-[160%] lg:w-[67%]"}
       />
       <section className="m-auto w-[99%] lg:w-[90%] p-1 py-8">
         <h2 className="text-letra2 text-2xl md:text-3xl  text-center respoFont">

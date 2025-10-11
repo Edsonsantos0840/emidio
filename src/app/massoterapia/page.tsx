@@ -7,17 +7,17 @@ import { MassoterapiaFields } from "../fields/MassoterapiaFields";
 
 function Massoterapia() {
   return (
-    <main className="min-h-screen alinha pt-16">
+    <main className="min-h-screen alinha pt-12">
       {/* Seção Cabeçalho */}
       <CardHead
         image={ima}
         testo="Saúde do corpo e da mente."
         descrição="Determinação e satisfação em oferecer o melhor para nossos pacientes."
         muda={"md:block"}
-        tamanho={"md:w-[160%] lg:w-[67%] xl:w-[50%]"}
+        tamanho={"md:w-[160%] lg:w-[67%]"}
       />
 
-      {/* Descrição sobre Massoterapia */}
+      {/* Descrição sobre Massoterapia */} 
       <section className="m-auto w-[98%] lg:w-[60%] p-1 py-8">
         <h2 className="text-letra2 text-2xl md:text-3xl text-center respoFont">
           Afinal, o que é a Massoterapia?
@@ -38,7 +38,7 @@ function Massoterapia() {
         </h2>
 
         {/* Texto explicativo com animação */}
-        <p className="max-h-0 opacity-0 overflow-hidden group-hover:max-h-[100px] group-hover:opacity-100 transition-all duration-700 ease-in-out w-[90%] md:text-[1.3rem] lg:text-[1rem] m-auto respoFont">
+        <p className="max-h-0 opacity-0 overflow-hidden  transition-all duration-700 ease-in-out w-[90%] md:text-[1.3rem] lg:text-[1rem] m-auto respoFont">
           Existem diversas abordagens e técnicas dentro da massoterapia, cada
           uma com suas características e objetivos específicos. Algumas das
           técnicas mais comuns incluem:
@@ -87,7 +87,7 @@ function Massoterapia() {
         </p>
 
         {/* Aviso importante com animação */}
-        <p className="py-6 w-[90%] md:text-[1.3rem] lg:text-[1rem] m-auto hidden group-hover:block group-hover:ease-in group-hover:duration-700 respoFont">
+        <p className="py-6 w-[90%] md:text-[1.3rem] lg:text-[1rem] m-auto hidden  respoFont">
           É importante ressaltar que a massoterapia não é uma substituição para
           cuidados médicos. Se você tem condições médicas específicas ou está
           lidando com problemas de saúde, é sempre recomendado consultar um
@@ -105,13 +105,13 @@ function Massoterapia() {
       <hr />
 
       {/* Mapeamento e exibição dos tratamentos */}
-      {MassoterapiaFields.map((item, index) => (
+      {MassoterapiaFields.map((item, i) => (
         <CardInfo
-          key={index}
-          imagem={item.imagem}
-          titulo={item.titulo}
-          texto={item.texto}
-          artigos={item.artigos}
+          key={i}
+          image={item.image}
+          title={item.title}
+          tex={item.tex}
+          articles={item.articles}
         />
       ))}
     </main>

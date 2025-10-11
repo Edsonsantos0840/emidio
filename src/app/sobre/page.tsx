@@ -6,13 +6,13 @@ import Link from "next/link";
 
 function Sobre() {
   return (
-    <main className="alinha pt-20">
+    <main className="alinha pt-12">
       <CardHead
         image="/image/17.png"
         testo="Saúde do corpo e da mente."
         descrição="Determinação e satisfação em oferecer o melhor para nossos pacientes."
         muda="md:block"
-        tamanho="md:w-[160%] lg:w-[67%] xl:w-[50%]"
+        tamanho="md:w-[160%] lg:w-[67%] "
       />
 
       <section

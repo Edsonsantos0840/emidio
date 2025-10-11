@@ -10,7 +10,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full z-30 bg-fundo shadow-lg">
+    <header className="fixed w-full z-30 bg-fundo shadow-lg p-2">
       <nav
         className="container mx-auto flex justify-between items-center px-2"
         role="navigation"
@@ -20,7 +20,7 @@ function NavBar() {
         <div className="flex items-center gap-3 w-full">
           <figure className="relative  bg-cover">
             <Image
-              src="/2.png"
+              src='/image/logo.png'
               alt="Logo do Espaço Emídio & Sá"
               fill
               sizes="(max-width: 768px) 100px, (max-width: 1024px) 50vw, 33vw"
@@ -68,7 +68,7 @@ function NavBar() {
           <ul className="flex flex-col lg:flex-row gap-2 text-center text-fundo lg:text-corLetra font-fontPrincipal ">
             {NavFields.map((link) => (
               <li key={link.text}>
-                <Link href={link.href} className="linkNav block py-1">
+                <Link href={link.href} className="linkNav">
                   {link.text}
                 </Link>
               </li>

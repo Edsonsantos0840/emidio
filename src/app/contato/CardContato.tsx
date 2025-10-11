@@ -1,8 +1,8 @@
 import { SocialMediaFields } from "@/app/fields/SocialMediaFields";
 import Link from "next/link";
-import CardContactAdress from "./CardContactAdress";
-import CardContactForm from "./CardContactForm";
-import CardMor from "./CardMor";
+import CardContactAdress from "../components/cards/adress/CardContactAdress";
+import CardContactForm from "../components/cards/form/CardContactForm";
+import CardMor from "../components/cards/CardMor";
 import Image from "next/image";
 
 interface PropsCardContato {
