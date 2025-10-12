@@ -1,6 +1,11 @@
 'use client'
 import { MassoterapiaProps } from "@/app/fields/MassoterapiaFields";
 import Image from "next/image";
+import { FaBrain, FaComments, FaLeaf, FaSun, FaSpa, FaHandHoldingHeart, FaWater } from "react-icons/fa";
+import { GiLotus, GiHealing, GiStonePile } from "react-icons/gi";
+import { IoIosPerson } from "react-icons/io";
+import { IoChatbubblesOutline } from "react-icons/io5";
+import { LuSparkles } from "react-icons/lu";
 
 export default function CardInfo({image,
   title,
@@ -17,7 +22,7 @@ export default function CardInfo({image,
         border-letra2 hover:shadow-2xl 
         hover:bg-fundoCard2">
         {/* Imagem com legenda semântica */}
-        <figure className="relative w-[360px] h-[360px] lrounded-xl shadow-xl ">
+        <figure className="relative w-[370px] h-[376px] lrounded-xl shadow-xl ">
           <Image
             src={image}
             alt={`Imagem ilustrativa sobre ${title}`}
@@ -28,13 +33,13 @@ export default function CardInfo({image,
           />
         </figure>
 
-        <article className="gap-1 p-2 w-full  ease-in group [perspective:1000px] cursor-pointer 
+        <article className="gap-1 p-1 w-full  ease-in group [perspective:1000px] cursor-pointer 
         ">
           <div className="relative transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div className="relative overflow-hidden [backface-visibility:hidden]">
           <h2
             id={`titulo-${title.replace(/\s+/g, "-").toLowerCase()}`}
-            className="titulo  pt-3 respoFont"
+            className="titulo text-center text-3xl pt-3 respoFont"
           >
             {title}
           </h2>
@@ -42,7 +47,32 @@ export default function CardInfo({image,
           <p className="  p-2 respoFont md:text-[1.1rem] lg:text-[1rem]">
             {tex}
           </p>
+          <div className="flex justify-between items-center my-4 p-2 font-terceiraFont">
+              <div>
+              <strong className="flex gap-2 text-base opacity-80"><IoIosPerson size={23} />Milhões de casos</strong>
+              <p className="flex flex-col opacity-60"> <strong className="text-base">No Mundo</strong></p>
+              </div>
+               <div>
+              <strong className="flex gap-2 text-base opacity-80"><IoIosPerson size={23} />Podemos </strong>
+              <p className="flex flex-col opacity-60"> <strong className="text-base">Te Ajudar</strong></p>
+              </div>
+          
+          </div>
+          <div className="flex justify-between gap-4 p-2 text-4xl w-full opacity-80">
+          <FaBrain className="text-green-950"  />  
+<FaComments className="text-green-950"  /> 
+<FaLeaf className="text-green-950"  /> 
+<LuSparkles className="text-green-950"  /> 
+<FaSun className="text-green-950"  />    
+<IoChatbubblesOutline className="text-green-950"  /> 
+<FaSpa className="text-green-950"  />    
+<FaHandHoldingHeart className="text-green-950"  /> 
 
+<FaWater className="text-green-950"  />   
+<GiLotus className="text-green-950"  />    
+<GiHealing className="text-green-950"  />        
+<GiStonePile className="text-green-950"  />  
+</div>
             </div>
           {/* Lista visível no hover */}
           <ul
