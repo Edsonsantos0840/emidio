@@ -1,7 +1,7 @@
 import CardHead from "../components/cards/CardHead";
 import ima from "../../../public/image/14 copy.png";
-import CardInfo from "../components/cards/CardInfo";
-import { PiscologiaFields } from "../fields/PiscologiaFields";
+import { PsychologyFields } from "../fields/PsychologyFields";
+import FlipCardInfo from "../components/cards/flipCard/FlipCardInfo";
 
 function Piscologia() {
   return (
@@ -36,13 +36,13 @@ function Piscologia() {
       </h2>
       <hr />
 
-      {PiscologiaFields.map((item, index) => (
-        <CardInfo
+      {PsychologyFields.map((item, index) => (
+        <FlipCardInfo
           key={index}
-          imagem={item.imagem}
-          titulo={item.titulo}
-          texto={item.texto}
-          artigos={item.artigos}
+          image={item.image}
+          title={item.title}
+          tex={item.tex}
+          articles={item.articles}
         />
       ))}
     </main>

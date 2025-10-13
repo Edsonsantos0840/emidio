@@ -47,7 +47,7 @@ export default function CardInfo({image,
           <p className="  p-2 respoFont md:text-[1.1rem] lg:text-[1rem]">
             {tex}
           </p>
-          <div className="flex justify-between items-center my-4 p-2 font-terceiraFont">
+          <div className="flex justify-between items-center my-4 pr-12 pl-2 font-terceiraFont">
               <div>
               <strong className="flex gap-2 text-base opacity-80"><IoIosPerson size={23} />Milhões de casos</strong>
               <p className="flex flex-col opacity-60"> <strong className="text-base">No Mundo</strong></p>
@@ -58,7 +58,7 @@ export default function CardInfo({image,
               </div>
           
           </div>
-          <div className="flex justify-between gap-4 p-2 text-4xl w-full opacity-80">
+          <div className="flex justify-between pr-12 pl-2 text-4xl w-full opacity-80">
           <FaBrain className="text-green-950"  />  
 <FaComments className="text-green-950"  /> 
 <FaLeaf className="text-green-950"  /> 

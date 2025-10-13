@@ -2,8 +2,8 @@
 
 import CardHead from "../components/cards/CardHead";
 import ima from "../../../public/image/3 copy.png";
-import CardInfo from "../components/cards/CardInfo";
 import { MassoterapiaFields } from "../fields/MassoterapiaFields";
+import FlipCardInfo from "../components/cards/flipCard/FlipCardInfo";
 
 function Massoterapia() {
   return (
@@ -106,7 +106,7 @@ function Massoterapia() {
 
       {/* Mapeamento e exibição dos tratamentos */}
       {MassoterapiaFields.map((item, i) => (
-        <CardInfo
+        <FlipCardInfo
           key={i}
           image={item.image}
           title={item.title}

@@ -1,8 +1,11 @@
-"use client";
-
+'use client'
 import { MassoterapiaProps } from "@/app/fields/MassoterapiaFields";
 import Image from "next/image";
-import Link from "next/link";
+import { FaBrain, FaComments, FaLeaf, FaSun, FaSpa, FaHandHoldingHeart, FaWater } from "react-icons/fa";
+import { GiLotus, GiHealing, GiStonePile } from "react-icons/gi";
+import { IoIosPerson } from "react-icons/io";
+import { IoChatbubblesOutline } from "react-icons/io5";
+import { LuSparkles } from "react-icons/lu";
 
 export default function FlipCardInfo({image,
   title,
@@ -10,49 +13,82 @@ export default function FlipCardInfo({image,
   articles,
   }: MassoterapiaProps) {
   return (
-    <article className="group [perspective:1000px] cursor-pointer ">
-      <div className="relative rounded-lg border border-transparent 
-        hover:border-letra2 hover:shadow-2xl 
-        hover:bg-fundoCard2 w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-        <figure className="absolute w-[420px] h-[420px] inset-0 bg-gray-200 rounded-xl shadow-xl overflow-hidden [backface-visibility:hidden]">
-        {/* Frente do card */}
+    <section
+      className="my-2 "
+      role="region"
+      aria-labelledby={`titulo-${title.replace(/\s+/g, "-").toLowerCase()}`}
+    >
+      <div className="grid grid-cols-[1fr_2fr] rounded-lg border  
+        border-letra2 hover:shadow-2xl 
+        hover:bg-fundoCard2">
+        {/* Imagem com legenda semântica */}
+        <figure className="relative w-[390px] h-[390px] lrounded-xl shadow-xl ">
           <Image
             src={image}
-            alt={`Imagem ${title}`}
-            width={420}
-            height={420}
-            className="w-full h-full object-cover"
+            alt={`Imagem ilustrativa sobre ${title}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            quality={100}
+            className="imgInfo "
           />
         </figure>
 
-        {/* Verso do card */}
-        <div className="absolute inset-0 bg-white rounded-xl shadow-xl p-4 flex flex-col justify-center items-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-          <h2 className="titulo respoFont text-corLetra lg:text-letra2">{title}</h2>
-        <ul
-          className="text-md lg:text-[1.1rem] text-corLetra  text-center"
-          aria-label={`Lista de detalhes sobre ${title}`}
-        >
+        <article className="gap-1 p-1 w-full  ease-in group [perspective:1000px] cursor-pointer 
+        ">
+          <div className="relative transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <div className="relative overflow-hidden [backface-visibility:hidden]">
+          <h2
+            id={`titulo-${title.replace(/\s+/g, "-").toLowerCase()}`}
+            className="titulo text-center text-3xl pt-3 respoFont"
+          >
+            {title}
+          </h2>
 
-          <p className="group-hover:hidden text-center p-2 respoFont md:text-[1.1rem] lg:text-[1rem]">
+          <p className="  p-2 respoFont md:text-[1.1rem] lg:text-[1rem]">
             {tex}
           </p>
-          {articles.map((item, i) => (
-            <li key={i} className="iinfoP respoFont">
-              {item}
-            </li>
-          ))}
-        </ul>
-          <Link
-            href="/contato"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-letra2 px-6 py-1 mt-2 text-center text-fundo rounded-md shadow-md hover:scale-105 hover:bg-[rgb(159, 226, 24)] transition-all duration-300 text-[1.2rem]  lg:text-[1.1rem] respoFont"
-          aria-label={`Agendar consulta sobre ${title}`}
-          >
-            {tex}
-          </Link>
+          <div className="flex justify-between items-center my-4 pr-12 pl-2 font-terceiraFont">
+              <div>
+              <strong className="flex gap-2 text-base opacity-80"><IoIosPerson size={23} />Milhões de casos</strong>
+              <p className="flex flex-col opacity-60"> <strong className="text-base">No Mundo</strong></p>
+              </div>
+               <div>
+              <strong className="flex gap-2 text-base opacity-80"><IoIosPerson size={23} />Podemos </strong>
+              <p className="flex flex-col opacity-60"> <strong className="text-base">Te Ajudar</strong></p>
+              </div>
+          
+          </div>
+          <div className="flex justify-between pr-12 pl-2 text-4xl w-full opacity-80">
+          <FaBrain className="text-green-950"  />  
+          <FaComments className="text-green-950"  /> 
+          <FaLeaf className="text-green-950"  /> 
+          <LuSparkles className="text-green-950"  /> 
+          <FaSun className="text-green-950"  />    
+          <IoChatbubblesOutline className="text-green-950"  /> 
+          <FaSpa className="text-green-950"  />    
+          <FaHandHoldingHeart className="text-green-950"  /> 
+          <FaWater className="text-green-950"  />   
+          <GiLotus className="text-green-950"  />    
+          <GiHealing className="text-green-950"  />        
+          <GiStonePile className="text-green-950"  />  
         </div>
+            </div>
+          {/* Lista visível no hover */}
+          <ul
+            className="absolute top-0 flex flex-col gap-1 p-2 md:text-[1rem] lg:text-[1rem] [transform:rotateY(180deg)] [backface-visibility:hidden]"
+            aria-label={`Mais detalhes sobre ${title}`}
+          >
+            {articles.map((artigo, i) => (
+              <li key={i} className="iinfoP respoFont">
+                {artigo}
+              </li>
+            ))}
+          </ul>
+
+          </div>
+
+        </article>
       </div>
-    </article>
+    </section>
   );
 }
