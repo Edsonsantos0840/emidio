@@ -75,7 +75,7 @@ export const MassoterapiaFields: MassoterapiaProps[] = [
       ],
     },
     {
-      image: "/image/sindrome do Túnel do Carpo.png",
+      image: "/image/sindrome do Tunel do Carpo.png",
       title: "Síndrome do Túnel do Carpo",
       tex:
         "Os problemas de circulação sanguínea podem ter uma variedade de sintomas, que variam de leves a graves. Esses sintomas podem ser indicativos de condições médicas subjacentes que afetam a circulação. É importante ressaltar que qualquer pessoa que suspeite ter um problema de circulação deve procurar orientação médica para um diagnóstico adequado e tratamento. Alguns sintomas comuns de problemas de circulação sanguínea incluem:",
@@ -92,10 +92,10 @@ export const MassoterapiaFields: MassoterapiaProps[] = [
       ],
     },
     {
-      image: "/image/dor_muscular_tencao.png",
+      image: "/image/dor_muscular_tencao2.png",
       title: "Dor Muscular e Tensão",
       tex:
-        "Dor muscular e tensão são duas condições frequentemente relacionadas ao sistema musculoesquelético. Vou explicar cada uma delas:",
+        "A dor muscular e a tensão são duas condições que afetam diretamente o sistema musculoesquelético e estão frequentemente relacionadas entre si. A dor muscular pode surgir após esforço físico intenso, má postura, movimentos repetitivos ou até mesmo situações de estresse emocional. Já a tensão muscular ocorre quando os músculos permanecem contraídos por longos períodos, o que pode reduzir a circulação local e causar desconforto:",
       articles: [
         "Dor, sensação de queimação, cãibras ou dormência nas pernas, pés, braços ou mãos.",
         "A pele nas áreas afetadas pode ficar mais pálida ou até mesmo adquirir uma coloração azulada devido à diminuição do fluxo sanguíneo.",
@@ -133,7 +133,7 @@ export const MassoterapiaFields: MassoterapiaProps[] = [
         "Insônia: É caracterizada pela dificuldade em adormecer ou permanecer dormindo, levando a um sono inadequado e não reparador. Pode ser causada por fatores como estresse, ansiedade, depressão, uso excessivo de dispositivos eletrônicos antes de dormir ou má higiene do sono.",
         "Apneia do sono: A apneia do sono é um distúrbio em que a pessoa para de respirar temporariamente durante o sono, muitas vezes devido ao colapso das vias respiratórias. Isso pode resultar em despertares frequentes e interrupções no padrão de sono, levando a sonolência diurna, falta de energia e problemas de saúde a longo prazo.",
         "Síndrome das pernas inquietas: Caracteriza-se por uma sensação desconfortável nas pernas, muitas vezes acompanhada de um impulso irresistível de movê-las. Isso pode interferir no sono, pois as pessoas afetadas frequentemente sentem a necessidade de se mover, o que pode dificultar o adormecimento.",
-        "Distúrbios do ritmo circadiano: O ritmo circadiano é o relógio biológico interno que regula o ciclo de sono-vigília. Distúrbios como o jet lag (resultante de viagens atravessando fusos horários) e o transtorno do ritmo circadiano são exemplos de problemas que podem afetar esse ritmo, levando a dificuldades para dormir nos horários convencionais.",
+        "Distúrbios do ritmo circadiano: O ritmo circadiano é o relógio biológico interno que regula o ciclo de sono-vigília.",
         ""
       ],
     },
@@ -189,7 +189,7 @@ export const MassoterapiaFields: MassoterapiaProps[] = [
       articles: [
         "O diagnóstico da fibromialgia pode ser desafiador, uma vez que não existem testes laboratoriais específicos ou exames de image que possam confirmá-la. O diagnóstico geralmente é baseado nos sintomas relatados pelo paciente e em um exame físico. Médicos frequentemente utilizam critérios estabelecidos por organizações como o Colégio Americano de Reumatologia para diagnosticar a fibromialgia.",
         "Embora não haja cura para a fibromialgia, o tratamento visa gerenciar os sintomas e melhorar a qualidade de vida do paciente. Isso pode envolver uma combinação de medicamentos (como analgésicos, antidepressivos e auxílios para dormir), fisioterapia, exercícios, técnicas de gerenciamento de estresse e mudanças no estilo de vida. É importante que pessoas com fibromialgia trabalhem em conjunto com um profissional de saúde para desenvolver um plano de tratamento personalizado.",
-        "Se você suspeita que tem fibromialgia ou está experimentando sintomas semelhantes aos descritos acima, é recomendado consultar um profissional médico para uma avaliação adequada e orientação.",
+        "Se você suspeita que tem fibromialgia ou está experimentando sintomas semelhantes aos descritos acima.",
         "",
         "",
       ],

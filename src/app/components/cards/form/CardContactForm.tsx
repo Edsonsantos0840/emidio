@@ -10,7 +10,7 @@ export default function CardContactForm() {
   return (
     <section
       aria-labelledby="contact-title"
-      className=" mx-auto mb-2 w-[96%] md:w-[90%] lg:w-[40%] lg:mx-auto bg-white p-4 shadow-lg rounded-xl relative mt-14"
+      className=" mx-auto mb-2 w-[96%]  lg:h-[78vh] bg-white p-4 shadow-lg rounded-xl relative mt-4 lg:mt-20"
     >
       <header>
         <h2

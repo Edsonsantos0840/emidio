@@ -36,11 +36,11 @@ export default function Home() {
             <FlipCardEmidio key={i} image={item.image} title={item.title} articles={item.articles} agenda={item.agenda}/>
             ))}
             {/* Card Fixo Final */}
-            <li
-            className="p-4 bg-fundoCard col-span-2 md:hidden lg:block rounded-md shadow-md transition-all duration-700 ease-in"
+            <div
+            className="p-2 md:hidden lg:block lg:p-4 bg-fundoCard lg:col-span-2  rounded-md shadow-md transition-all duration-700 ease-in"
             aria-label="Mensagem de encerramento sobre autocuidado"
           >
-            <article className="px-4">
+            <article className=" lg:px-4">
               <h2 className=" text-corLetra lg:text-letra2 text-[1.6rem] text-center respoFont lg:mt-10">
                 Você sofre desses males? Podemos te ajudar.
               </h2>
@@ -56,7 +56,7 @@ export default function Home() {
                 ouvirem e lembrem-se de cuidar tanto do corpo quanto da mente!
               </p>
             </article>
-          </li>
+          </div>
         </ul>
       </section>
     </main>

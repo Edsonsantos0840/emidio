@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Sobre() {
   return (
-    <main className="alinha pt-12">
+    <main className="alinha py-12">
       <CardHead
         image="/image/17.png"
         testo="Saúde do corpo e da mente."
@@ -16,12 +16,12 @@ function Sobre() {
       />
 
       <section
-        className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 mt-10 ease-in duration-300"
+        className="grid grid-cols-1 lg:grid-cols-2 w-full gap-2 mt-10 ease-in duration-300"
         aria-label="Serviços oferecidos"
       >
         {/* Psicologia */}
         <article
-          className="rounded-lg shadow-lg transform transition hover:translate-y-2 hover:shadow-2xl bg-custom-gradient p-4 alinha6 group ease-in duration-300"
+          className="rounded-lg shadow-lg transform transition duration-500 ease-in-out  p-4 alinha6 hover:scale-105 hover:border-2 border-letra2 "
           aria-labelledby="titulo-psicologia"
         >
           <h2
@@ -46,7 +46,7 @@ function Sobre() {
             />
           </figure>
 
-          <p className="hidden icoInput leading-relaxed text-center mb-4 group-hover:block md:text-[1.3rem] lg:text-[1rem] respoFont">
+          <p className=" icoInput leading-relaxed text-center mb-4 md:text-[1.3rem] lg:text-[1rem] respoFont">
             Nossa psicóloga está aqui para oferecer orientação e apoio
             emocional. Trabalhamos com sessões individuais e terapias focadas em
             ajudar você a explorar seus pensamentos, sentimentos e
@@ -69,7 +69,7 @@ function Sobre() {
 
         {/* Massoterapia */}
         <article
-          className="rounded-lg p-4 shadow-lg transform transition hover:translate-y-2 hover:shadow-2xl bg-custom-gradient alinha6 group ease-in duration-300"
+          className="rounded-lg p-4 shadow-lg alinha6 transform transition duration-500 ease-in-out hover:scale-105 hover:border-2 border-letra2"
           aria-labelledby="titulo-massoterapia"
         >
           <h2
@@ -94,8 +94,8 @@ function Sobre() {
             />
           </figure>
 
-          <p className="hidden icoInput leading-relaxed text-center mb-4 group-hover:block md:text-[1.3rem] lg:text-[1rem] respoFont">
-            Nosso terapeuta especializado oferece técnicas variadas para aliviar
+          <p className="icoInput leading-relaxed text-center mb-4  md:text-[1.3rem] lg:text-[1rem] respoFont">
+            Nosso terapeuta especializado está aqui para oferecer orientação e apoio oferece técnicas variadas para aliviar
             tensões musculares, melhorar a circulação e promover um relaxamento
             profundo. As sessões são personalizadas para atender às suas
             necessidades específicas.

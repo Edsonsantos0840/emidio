@@ -13,9 +13,9 @@ interface PropsCardContato {
 
 export default function CardContato({texto, descrição, botao}: PropsCardContato) {
   return (
-    <main className="min-h-screen w-full  lg:alinha3">
+    <main className="min-h-screen w-full  lg:alinha3 pt-12">
     <section
-      className="relative w-full md:h-[50vh] lg:h-[100vh] flex items-center lg:justify-end overflow-hidden"
+      className="relative w-full lg:h-screen grid grid-cols-1 lg:grid-cols-2 py-4"
       aria-labelledby="contact-card-title"
     >
       {/* Imagem de fundo fixa */}
@@ -32,22 +32,22 @@ export default function CardContato({texto, descrição, botao}: PropsCardContat
       <div className="absolute inset-0 bg-gradient-to-l from-corSombra via-[#124022] via-100% to-transparent"></div>
 
       {/* Conteúdo (textos e botões) alinhado à direita */}
-      <div className="md:flex justify-center items-center w-full mt-14 md:mt-6 ">
-        <div className="relative z-10 text-principal drop-shadow-xl text-justify px-6 lg:px-12 w-full lg:max-w-[50%] mt-3">
+      <div className="flex justify-center  items-center w-full p-4 ">
+        <div className="relative z-10 text-principal drop-shadow-xl ">
           <h2
             id="contact-card-title"
             className="text-3xl md:text-[1.6rem] lg:text-3xl font-bold font-pacifico"
           >
             {texto}
           </h2>
-          <p className="hidden lg:block text-base mt-4">{descrição}</p>
+          <p className=" text-base ">{descrição}</p>
 
           {/* Botões */}
           {!botao && (
-            <div className="flex flex-col justify-start gap-6 mt-6 lg:mt-3">
+            <div className="flex flex-col items-center  gap-6 ">
               <CardContactAdress />
               {/* Seção de Redes Sociais */}
-              <div className="flex space-x-8 mb-4">
+              <ul className="flex justify-between gap-12 md:gap-16 ">
                 {/* Links para redes sociais */}
                 {SocialMediaFields.map((link, index) => (
                   <Link
@@ -59,14 +59,14 @@ export default function CardContato({texto, descrição, botao}: PropsCardContat
                     {link.ico}
                   </Link>
                 ))}
-              </div>
+              </ul>
               <CardMor />
             </div>
           )}
         </div>
 
-        <CardContactForm />
       </div>
+        <CardContactForm />
     </section>
   </main>
   )

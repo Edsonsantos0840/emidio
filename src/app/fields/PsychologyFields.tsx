@@ -15,7 +15,7 @@ export const PsychologyFields: PsychologyProps[] = [
         "Insônia: É caracterizada pela dificuldade em adormecer ou permanecer dormindo, levando a um sono inadequado e não reparador. Pode ser causada por fatores como estresse, ansiedade, depressão, uso excessivo de dispositivos eletrônicos antes de dormir ou má higiene do sono.",
         "Apneia do sono: A apneia do sono é um distúrbio em que a pessoa para de respirar temporariamente durante o sono, muitas vezes devido ao colapso das vias respiratórias. Isso pode resultar em despertares frequentes e interrupções no padrão de sono, levando a sonolência diurna, falta de energia e problemas de saúde a longo prazo.",
         "Síndrome das pernas inquietas: Caracteriza-se por uma sensação desconfortável nas pernas, muitas vezes acompanhada de um impulso irresistível de movê-las. Isso pode interferir no sono, pois as pessoas afetadas frequentemente sentem a necessidade de se mover, o que pode dificultar o adormecimento.",
-        "Distúrbios do ritmo circadiano: O ritmo circadiano é o relógio biológico interno que regula o ciclo de sono-vigília. Distúrbios como o jet lag (resultante de viagens atravessando fusos horários) e o transtorno do ritmo circadiano são exemplos de problemas que podem afetar esse ritmo, levando a dificuldades para dormir nos horários convencionais.",
+        "Distúrbios do ritmo circadiano: O ritmo circadiano é o relógio biológico interno que regula o ciclo de sono-vigília.",
         ""
       ],
     },
@@ -49,7 +49,7 @@ export const PsychologyFields: PsychologyProps[] = [
       image: "/image/transtornos de Ansiedade2.png",
       title: "Transtornos de Ansiedade",
       tex:
-       "O tratamento para transtornos de ansiedade pode envolver uma combinação de terapia As mãos e os pés podem ficar frios ao toque devido ao fluxo sanguíneo reduzido . Nós podemos te ajudar em cada uma dessas situações.",
+       "Os transtornos de ansiedade constituem um grupo de condições de saúde mental caracterizadas por sentimentos intensos, persistentes e muitas vezes incontroláveis de medo, apreensão ou preocupação, que ultrapassam as reações normais diante de situações cotidianas. Esses sentimentos podem se manifestar de forma constante ou surgir em momentos específicos, interferindo de maneira significativa no bem-estar emocional, no desempenho profissional, nos relacionamentos e na qualidade de vida da pessoa.",
       articles: [
         "Transtorno do Pânico**: Envolve ataques de pânico inesperados e recorrentes, acompanhados de sintomas físicos e emocionais, como batimentos cardíacos acelerados, sudorese, tremores e uma sensação iminente de perigo.",
         "Transtorno de Ansiedade de Performance.",
@@ -77,12 +77,12 @@ export const PsychologyFields: PsychologyProps[] = [
       image: "/image/transtornos do Humor3.png",
       title: "Transtornos do Humor",
       tex:
-        "É importante lembrar que esses transtornos podem ser tratados com sucesso com terapia, medicação ou uma combinação de ambos. Se você ou alguém que você conhece está apresentando sintomas consistentes com um transtorno de humor, é aconselhável nos procurar para avaliação e tratamento adequado.",
+        "É importante lembrar que os transtornos de humor e de ansiedade podem ser tratados com sucesso, especialmente quando diagnosticados precocemente. O acompanhamento profissional adequado faz toda a diferença no processo de recuperação, ajudando o paciente a compreender melhor suas emoções, identificar gatilhos e desenvolver estratégias mais saudáveis para lidar com os desafios do dia a dia. O tratamento costuma envolver terapia psicológica, medicação ou a combinação de ambos.",
       articles: [
         "Transtorno Desafiador Opositivo (TDO) : Embora não seja um transtorno de humor, o TDO é um transtorno comportamental que pode estar associado a alterações de humor. Envolver um padrão persistente de comportamento, hostil e desobediente em crianças e adolescentes. Pode incluir irritabilidade intensa e explosões de raiva desproporcionais.",
         "Transtorno Disfórico Pré-Menstrual (TDPM) : O TDPM é caracterizado por mudanças de humor acentuadas e sintomas físicos que ocorrem durante o ciclo menstrual. Esses sintomas podem incluir irritabilidade, tensão, fadiga, alterações no sono e no apetite. É mais grave que os sintomas normais associados à menstruação.",
         "Transtorno de Humor Induzido por Substância : O uso ou abuso de substância, como álcool, drogas ilícitas ou certos medicamentos, pode levar a alterações significativas no humor. Por exemplo, o uso excessivo de álcool pode contribuir para a depressão, enquanto algumas drogas estimulantes podem desencadear episódios de mania.",
-        "Transtorno do Humor devido a uma Condição Médica : Certas condições médicas, como distúrbios da tireoide, doenças neurológicas ou outras condições de saúde, podem causar alterações no humor. Quando os sintomas de humor são diretamente atribuíveis a uma condição médica, é revelado um transtorno de humor devido a uma condição médica.",
+        "Transtorno do Humor devido a uma Condição Médica : Certas condições médicas, como distúrbios da tireoide, doenças neurológicas ou outras condições de saúde, podem causar alterações no humor. ",
         ""
       ],
     },
@@ -90,7 +90,7 @@ export const PsychologyFields: PsychologyProps[] = [
       image: "/image/ranstornos do Comportamento Alimentar.png",
       title: "Transtorno Alimentar",
       tex:
-        "Os Transtornos do Comportamento Alimentar (TCA) são condições psicológicas que envolvem padrões anormais de alimentação e pensamentos perturbados em relação à alimentação, peso, corpo e image corporal. Esses transtornos podem ter sérias implicações para a saúde física e mental das pessoas afetadas. Alguns dos transtornos Aqui estão algumas informações sobre esses transtornos:",
+        "Os Transtornos do Comportamento Alimentar (TCA) são condições psicológicas que envolvem padrões anormais de alimentação e pensamentos perturbados em relação à alimentação, peso, corpo e image corporal. Esses transtornos podem ter sérias implicações para a saúde física e mental das pessoas afetadas. Alguns dos transtornos. Os TCAs podem se manifestar de diferentes formas, desde a restrição extrema de alimentos até o consumo compulsivo e descontrolado. Aqui estão algumas informações sobre esses transtornos:",
       articles: [
         "Anorexia Nervosa: Pessoas com anorexia nervosa têm uma preocupação intensa em perder peso e uma percepção distorcida de seu próprio corpo, geralmente acreditando que estão acima do peso, mesmo que estejam abaixo do peso saudável. Eles tendem a restringir severamente a ingestão de alimentos, o que pode levar a uma desnutrição grave e outros problemas de saúde.",
         "Bulimia Nervosa: Indivíduos com bulimia nervosa apresentam episódios de compulsão alimentar, nos quais consomem grandes quantidades de alimentos em um curto período de tempo.",
@@ -103,7 +103,7 @@ export const PsychologyFields: PsychologyProps[] = [
       image: "/image/ranstornos do Comportamento Alimentar2.png",
       title: "Transtornos do Comportamento Alimentar.",
       tex:
-       "É importante destacar que, embora possa haver sobreposições e nuances entre esses transtornos, cada um tem suas próprias características específicas e critérios diagnósticos. O diagnóstico e tratamento adequados devem ser feitos por profissionais de saúde mental e médicos especializados.",
+       "É importante destacar que, embora possa haver sobreposições e nuances entre esses transtornos, cada um tem suas próprias características específicas e critérios diagnósticos. O diagnóstico e tratamento adequados devem ser feitos por profissionais de saúde mental e médicos especializados. Além do impacto psicológico, esses transtornos podem causar consequências graves à saúde física, afetando o funcionamento do coração, sistema digestivo, ossos, hormônios e até o cérebro.",
       articles: [
         "Transtorno de Evitação/Restrição da Ingestão de Alimentos: Este é um transtorno menos conhecido, no qual uma pessoa evita certos alimentos ou grupos de alimentos devido a sensações alimentares percebidas, aversões sensoriais ou preocupações com consequências negativas na saúde ou no peso.",
         "Transtorno de Ruminação: Esse transtorno envolve regurgitação repetida de alimentos após as refeições, seguida de remastigação, ressalva ou descarte de alimentos. Geralmente não está associado a uma condição médica específica e pode afetar crianças e adultos.",
@@ -116,7 +116,7 @@ export const PsychologyFields: PsychologyProps[] = [
       image: "/image/transtornos do Controle dos Impulsos3.png",
       title: "Transtornos do Controle dos Impulsos",
       tex:
-        "Os Transtornos do Controle dos Impulsos são um grupo de condições psiquiátricas descritas pela dificuldade em resistir a impulsos ou desejos irresistíveis, levando a comportamentos repetitivos e muitas vezes agressivos. Esse Aqui estão alguns exemplos de Transtornos do Controle dos Impulsos:",
+        "Os Transtornos do Controle dos Impulsos são um grupo de condições psiquiátricas descritas pela dificuldade em resistir a impulsos ou desejos irresistíveis, levando a comportamentos repetitivos e muitas vezes agressivos. Esses comportamentos costumam ser repetitivos e, muitas vezes, impulsivos, agressivos ou prejudiciais, gerando arrependimento ou culpa após o ato. Esse Aqui estão alguns exemplos de Transtornos do Controle dos Impulsos:",
       articles: [
         "Transtorno de Jogo: Também conhecido como jogo patológico, é caracterizado por um padrão persistente e recorrente de comportamento de jogo, apesar das consequências adversárias. Pode levar a problemas financeiros, emocionais e sociais graves.",
         "Transtorno Explosivo Intermitente: Envolve episódios de agressão verbal ou física desproporcional em relação à situação, desencadeados por um estresse mínimo. Pessoas com esse transtorno têm dificuldade em controlar sua raiva.",
@@ -139,24 +139,24 @@ export const PsychologyFields: PsychologyProps[] = [
       ],
     },
     {
-      image: "/image/relacionados ao Uso de Substâncias.png",
-      title: "Relacionados ao Uso de Substâncias.",
+      image: "/image/relacionados ao Uso de Substancias.png",
+      title: "Uso de Substâncias.",
       tex:
-       "Os Transtornos Relacionados ao Uso de Substâncias (TRUS), também conhecidos como Transtornos Relacionados ao Uso de Drogas, são um grupo de condições de saúde mental que envolve o uso prejudicial ou problemático de substâncias psicoativas, como álcool, tabaco, cannabis, cocaína, opioides.",
+       "Os Transtornos Relacionados ao Uso de Substâncias (TRUS), também conhecidos como Transtornos Relacionados ao Uso de Drogas, são um grupo de condições de saúde mental que envolve o uso prejudicial ou problemático de substâncias psicoativas, como álcool, tabaco, cannabis, cocaína, opioides. O desenvolvimento desses transtornos é complexo e multifatorial, envolvendo aspectos biológicos, psicológicos e sociais.Em muitos casos, o consumo começa de forma recreativa ou experimental, mas com o tempo pode evoluir para um padrão de uso compulsivo.",
       articles: [
         "Transtorno pelo Uso de Álcool: Envolve o consumo excessivo e problemático de álcool, causando dificuldades sociais, profissionais, de saúde e legais.",
         "Transtorno pelo Uso de Substâncias Psicoativas: Isso inclui o uso problemático de uma variedade de drogas, como maconha, cocaína, anfetaminas, alucinógenos, entre outras.",
         "Transtorno pelo Uso de Opioides: Envolve o uso problemático de opioides, incluindo substâncias como heroína e analgésicos prescritos.",
         "Transtorno pelo Uso de Estimulantes: Relacionado ao uso excessivo de estimulantes, como cocaína e anfetaminas, com consequências adversas.",
         "Transtorno pelo uso de sedativos/hipnóticos/ansiolíticos: Isso se refere ao uso problemático de substâncias como benzodiazepínicos, que são frequentemente prescritos para ansiedade e insônia.",
-        "É importante notar que o diagnóstico de um TRUS leva em consideração critérios específicos específicos nos sistemas de classificação (CID-10, DSM-5) e requer a avaliação de um profissional de saúde mental qualificado. O tratamento para os TRUS pode incluir terapia comportamental, terapia cognitivo-comportamental, programas de reabilitação, suporte social e, em alguns casos, medicamentos."
+        "É importante notar que o diagnóstico de um TRUS leva em consideração critérios específicos específicos nos sistemas de classificação (CID-10, DSM-5) e requer a avaliação de um profissional de saúde mental qualificado. O tratamento para os TRUS pode incluir terapia comportamental."
       ],
     },
     {
       image: "/image/transtornos de Personalidade.png",
       title: "Transtorno de personalidade.",
       tex:
-       "Os transtornos de personalidade são padrões persistentes e inflexíveis de pensamento, comportamento e emoções que alteram significativamente as expectativas culturais e interferem no funcionamento social, ocupacional ou pessoal de um indivíduo. Esses padrões geralmente começam a se manifestar na adolescência ou no início da idade adulta e tendem a ser resultantes ao longo do tempo.",
+       "Os transtornos de personalidade são padrões persistentes e inflexíveis de pensamento, comportamento e emoções que alteram significativamente as expectativas culturais e interferem no funcionamento social, ocupacional ou pessoal de um indivíduo. Esses padrões geralmente começam a se manifestar na adolescência ou no início da idade adulta e tendem a ser resultantes ao longo do tempo. Não se tratam de comportamentos ocasionais, mas de formas consistentes de reagir e se relacionar que se tornam inflexíveis e difíceis de mudar sem acompanhamento adequado.",
       articles: [
         "Cluster A - Transtornos excêntricos ou bizarros: Transtorno de Personalidade Paranóide: Caracterizado por desconfiança excessiva, suspeitas infundadas e interpretações distorcidas dos interesses dos outros. Transtorno de Personalidade Esquizoide: Indivíduos com esse transtorno tendem a ser isolados socialmente, têm dificuldade em expressar emoções e mostram pouco interesse em relacionamentos interpessoais. Transtorno de Personalidade Esquizotípica: Caracterizado por padrões de pensamento e comportamento estranhos, aparentemente excêntricos e desconforto social.",
         "Cluster B - Transtornos dramáticos, emocionais ou imprevisíveis: Transtorno de Personalidade Antissocial: Pessoas com esse transtorno têm pouco respeito pelas normas sociais, podem ser manipuladoras, impulsivas e frequentemente têm histórico de comportamento violento. Transtorno de Personalidade Borderline: Caracterizado por instabilidade emocional intensa, relacionamentos tumultuados, impulsividade e autoimage instável. Transtorno de Personalidade Histriônica: Indivíduos com esse transtorno buscam constantemente atenção e um desejo excessivo de serem o centro das atenções. Seu comportamento pode ser teatral e emocionalmente superficial. Transtorno de Personalidade Narcisista: Caracterizado por um senso inflado de importância pessoal, falta de empatia e busca constante por admiração.",
@@ -169,7 +169,7 @@ export const PsychologyFields: PsychologyProps[] = [
       image:"/image/estresse e Trauma.png",
       title: "Estresse Traumático.",
       tex:
-       "O estresse é uma resposta do organismo a qualquer demanda ou pressão que exija ajustes. Pode ser causado por eventos positivos ou negativos e é uma parte natural da vida. No entanto, quando o estresse se torna excessivo ou persistente, pode levar a problemas de saúde física e mental.",
+       "O estresse é uma resposta do organismo a qualquer demanda ou pressão que exija ajustes. Pode ser causado por eventos positivos ou negativos e é uma parte natural da vida. No entanto, quando o estresse se torna excessivo ou persistente, pode levar a problemas de saúde física e mental. O excesso de estresse pode contribuir para o surgimento de sintomas físicos, como dores musculares, insônia, fadiga e alterações no apetite, além de afetar a concentração e o equilíbrio emocional.",
       articles: [
        "O estresse traumático, por sua vez, refere-se a uma forma mais intensa e de tensão de estresse, geralmente causada por eventos traumáticos. Um evento traumático é algo que ameaça a integridade física ou psicológica de uma pessoa, causando reações emocionais e psicológicas intensas. Alguns exemplos de eventos traumáticos incluem acidentes graves, abuso físico ou sexual, desastres naturais, violência, guerra e outros eventos extremamente perturbadores. O Transtorno de Estresse Pós-Traumático (TEPT) é um diagnóstico psiquiátrico que se aplica a pessoas que experimentaram eventos traumáticos e começaram a sofrer de estresse intenso após o evento. Os sintomas do TEPT incluem flashbacks perturbadores.É importante procurar ajuda profissional se você acredita que está sofrendo de estresse traumático ou TEPT, pois esses transtornos podem afetar significativamente a qualidade de vida e a necessidade de tratamento adequado. A terapia, como a terapia cognitivo-comportamental (TCC), e, em alguns casos, a medicação pode ser usada para ajudar as pessoas a lidar com os efeitos do estresse traumático.",
         "",
@@ -182,20 +182,20 @@ export const PsychologyFields: PsychologyProps[] = [
       image:"/image/problemas de Relacionamento2.png",
       title: "Problemas de Relacionamento.",
       tex:
-       "É normal enfrentar problemas de relacionamento em diversas áreas da vida, seja em relacionamentos amorosos, familiares, de amizade ou no ambiente de trabalho. Aqui estão alguns problemas comuns que as pessoas enfrentam em seus relacionamentos, juntamente com algumas orientações sobre como lidar com eles:",
+       "É normal enfrentar problemas de relacionamento em diversas áreas da vida, seja em relacionamentos amorosos, familiares, de amizade ou no ambiente de trabalho. Lidar com essas situações exige paciência, escuta ativa e disposição para compreender o ponto de vista do outro. Buscar o diálogo aberto e respeitoso, aprender a expressar sentimentos de forma clara e sem agressividade, e estabelecer limites saudáveis são atitudes essenciais para manter relações mais harmoniosas. Aqui estão alguns problemas comuns que as pessoas enfrentam em seus relacionamentos, juntamente com algumas orientações sobre como lidar com eles:",
       articles: [
         "Falta de Comunicação: A comunicação deficiente é um dos principais problemas. Isso pode incluir não expressar sentimentos, não compartilhar informações importantes ou não ouvir atentamente o outro. Para lidar com isso, é fundamental praticar a escuta ativa, expressar suas próprias necessidades de maneira clara e estar aberto a ouvir o que o outro tem a dizer.",
         "Desentendimentos e Conflitos: Os conflitos são naturais, mas quando não são resolvidos deliberadamente, podem causar problemas duradouros. Aprenda a abordar os conflitos de maneira construtiva, focando em soluções e compromissos, em vez de culpar ou acusar.",
         "Falta de Confiança: A confiança é essencial em qualquer relacionamento. Se a confiança foi quebrada, é importante ter conversas honestas sobre o que aconteceu, demonstrar mudança de comportamento e dar ritmo para que a confiança seja reconstruída gradualmente.",
         "Diferenças de Opinião e Valores: As pessoas têm opiniões e valores diferentes, o que pode levar a discordâncias. É importante aprender a respeitar as diferenças e encontrar maneiras de compromisso, quando possível, ou concordar em discordar sem dificuldades no relacionamento.",
-        "Insegurança e Ciúmes: Sentimentos de insegurança e ciúmes podem surgir devido a questões internas ou externas ao relacionamento. Trabalhe na construção da autoestima e na comunicação aberta para abordar esses sentimentos de forma saudável."
+        "Insegurança e Ciúmes: Inseguranças podem surgir devido a questões internas ou externas ao relacionamento."
       ],
     },
     {
-      image:"/image/problemas de Saúde Mental Infantil e Adolescente2.png",
-      title: "Problemas de Saúde Mental Infantil e Adolescente.",
+      image:"/image/problemas de Saude Mental Infantil e Adolescente2.png",
+      title: "Saúde Mental Infantil e Adolescente.",
       tex:
-       "Os problemas de saúde mental em crianças e adolescentes têm recebido cada vez mais atenção nos últimos anos, à medida que se confirma a importância de identificar e tratar essas questões precocemente. Alguns dos problemas de saúde mental mais comuns em crianças e adolescentes incluem:",
+       "Os problemas de saúde mental em crianças e adolescentes têm recebido cada vez mais atenção nos últimos anos, à medida que se confirma a importância de identificar e tratar essas questões precocemente. Diversos fatores podem contribuir para o surgimento de dificuldades emocionais e comportamentais nessa etapa da vida. Mudanças familiares, pressões escolares, bullying, uso excessivo de tecnologia, questões de identidade e até mesmo o ambiente social podem impactar significativamente a saúde mental de crianças e adolescentes. Alguns dos problemas de saúde mental mais comuns em crianças e adolescentes incluem:",
       articles: [
         "Transtornos de Ansiedade: Isso inclui transtorno de ansiedade generalizada, fobias específicas, transtorno de pânico e transtorno de ansiedade social. Crianças e adolescentes podem apresentar preocupações excessivas, medos irracionais e sintomas físicos de ansiedade.Transtorno do Déficit de Atenção e Hiperatividade (TDAH): Caracteriza-se por dificuldades em manter a atenção, hiperatividade e impulsividade. Isso pode impactar o desempenho escolar, a interação social e Depressão: Crianças e adolescentes também podem experimentar sintomas de depressão, incluindo tristeza persistente, perda de interesse pelas atividades, mudanças no sono e no apetite e sentimentos de desesperança.",
         "Transtornos do Espectro Autista (TEA): Embora seja um transtorno de desenvolvimento mais amplo, muitas vezes está associado a desafios na comunicação, interação social e comportamentos repetitivos.",
@@ -205,26 +205,26 @@ export const PsychologyFields: PsychologyProps[] = [
       ],
     },
     {
-      image:"/image/problemas de Saúde Mental no Idoso.png",
-      title: "Problemas de Saúde Mental no Idoso.",
+      image:"/image/problemas de Saude Mental no Idoso.png",
+      title: "Saúde Mental no Idoso.",
       tex:
-       "Os problemas de saúde mental no idoso são uma preocupação significativa, uma vez que a população idosa está em constante crescimento em muitas partes do mundo. Várias questões podem contribuir para o surgimento e agravamento desses problemas, incluindo",
+       "Os problemas de saúde mental no idoso são uma preocupação significativa, uma vez que a população idosa está em constante crescimento em muitas partes do mundo. Com o envelhecimento, mudanças físicas, sociais e cognitivas podem impactar significativamente o bem-estar emocional, tornando os idosos mais vulneráveis a condições como depressão, ansiedade, demência e transtornos relacionados ao estresse. Várias questões podem contribuir para o surgimento e agravamento desses problemas, incluindo",
       articles: [
         "Depressão: A depressão é uma condição grave que pode afetar qualquer faixa etária, mas os idosos estão em risco particular devido a fatores como perda de entes queridos, isolamento social, problemas de saúde psicológicos e alterações hormonais. A depressão pode se manifestar de maneiras diferentes nos idosos, muitas vezes com queixas físicas em vez de sintomas emocionais.",
         "Ansiedade: A ansiedade é outra condição comum em idosos. Preocupações com a saúde, solidão, finanças e outras questões podem contribuir para o desenvolvimento de transtornos de ansiedade. A ansiedade também pode ser resultado de condições médicas subjacentes.",
         "Transtornos Cognitivos: Isso inclui condições como a demência e a doença de Alzheimer. Esses transtornos afetam a memória, o raciocínio e a capacidade de realizar atividades diárias. O envelhecimento natural também pode resultar em diminuição da cognição.",
         "Isolamento Social: Muitos idosos enfrentam isolamento social devido a fatores como perda de amigos e familiares, atraso e dificuldade de locomoção. O isolamento social pode levar à solidão, depressão e outros problemas de saúde mental.",
-        "Mudanças na Identidade e Autoestima: A transição para a aposentadoria e as mudanças no papel social podem afetar a identidade e a autoestima dos idosos, levando a problemas emocionais.",
+        "",
       ],
     },
     {
       image:"/image/estresse no Trabalho e Burnout.png",
       title: "Estresse no Trabalho e Burnout.",
       tex:
-       "O estresse no trabalho e o burnout são conceitos relacionados que se referem a problemas de saúde mental que podem ocorrer devido a condições desafiadoras no ambiente de trabalho. Embora compartilhem algumas semelhanças, eles têm características distintas.",
+       "O estresse no trabalho e o burnout são conceitos relacionados que se referem a problemas de saúde mental que podem ocorrer devido a condições desafiadoras no ambiente de trabalho. O estresse no trabalho é uma resposta natural do corpo e da mente a pressões ou exigências profissionais, como prazos apertados, excesso de tarefas, conflitos com colegas ou chefia, e insegurança quanto à estabilidade do emprego. Embora compartilhem algumas semelhanças, eles têm características distintas.",
       articles: [
         "Estresse no Trabalho: O estresse no trabalho é uma resposta natural do corpo às demandas e pressões excessivas no ambiente profissional. Ele pode ser causado por uma variedade de fatores, como prazos apertados, carga de trabalho elevada, conflitos interpessoais, falta de controle sobre as tarefas, falta de apoio da equipe ou superiores, entre outros. Um nível moderado de estresse pode até ser benéfico, pois pode motivar as pessoas a se esforçarem e alcançarem metas. No entanto, quando o estresse se torna constante e opressivo, pode levar a problemas de saúde física e mental, afetando o bem-estar geral da pessoa Burnout: O burnout é um estado de exaustão emocional, mental e física resultante de um estresse prolongado e não gerenciado no ambiente de trabalho. Foi inicialmente descrito no contex profissional da área",
-        "Diferenças entre Estresse e Burnout:O estresse é uma consequência de pressão ou demandas, enquanto o burnout é um estado de exaustão resultante do estresse prolongado. O estresse é geralmente acompanhado por sentimentos de ansiedade e sobrecarga, enquanto o burnout envolve sentimentos de desesperança, apatia e desânimo. O estresse está mais relacionado a uma resposta aguda a situações desafiadoras, enquanto o burnout é um processo gradual que se desenvolve ao longo do tempo. O estresse pode diminuir quando as condições no ambiente de trabalho melhoram, enquanto o burnout muitas vezes requer intervenção mais intensiva para ser superado.",
+        "Diferenças entre Estresse e Burnout:O estresse é uma consequência de pressão ou demandas, enquanto o burnout é um estado de exaustão resultante do estresse prolongado. O estresse é geralmente acompanhado por sentimentos de ansiedade e sobrecarga, enquanto o burnout envolve sentimentos de desesperança, apatia e desânimo. O estresse está mais relacionado a uma resposta aguda a situações desafiadoras, enquanto o burnout é um processo gradual que se desenvolve ao longo do tempo. O estresse pode diminuir quando as condições no ambiente de trabalho melhoram.",
         "",
         "",
         ""
@@ -274,7 +274,7 @@ export const PsychologyFields: PsychologyProps[] = [
       image:"/image/desenvolvimento Pessoal.png",
       title: "Desenvolvimento pessoal.",
       tex:
-       "Desenvolvimento pessoal refere-se ao processo contínuo de autodescoberta, aprimoramento de habilidades, crescimento emocional e evolução pessoal que uma pessoa busca ao longo de sua vida. Envolver o investimento consciente e ativo no próprio crescimento, tanto em termos de habilidades práticas quanto de desenvolvimento emocional e mental. Aqui estão alguns aspectos importantes do desenvolvimento pessoal:",
+       "Desenvolvimento pessoal refere-se ao processo contínuo de autodescoberta, aprimoramento de habilidades, crescimento emocional e evolução pessoal que uma pessoa busca ao longo de sua vida. Envolver o investimento consciente e ativo no próprio crescimento, tanto em termos de habilidades práticas quanto de desenvolvimento emocional e mental. Esse processo inclui a capacidade de reconhecer pontos fortes e limitações, definir metas significativas, lidar com desafios e mudanças, e buscar constantemente formas de melhorar a si mesmo, tanto na vida pessoal quanto profissional. Aqui estão alguns aspectos importantes do desenvolvimento pessoal:",
       articles: [
         "Autoconhecimento: Compreender quem você é, quais são seus valores, interesses, pontos fortes e áreas de melhoria. Isso ajuda a tomar decisões alinhadas com suas metas pessoais.Metas claras: Definir metas específicas e mensuráveis ​​para diferentes áreas da vida, como carreira, relacionamentos, saúde e desenvolvimento pessoal.",
         "Aprendizado contínuo: Busque constantemente novos conhecimentos, adquira novas habilidades e se atualize em sua área de interesse.Habilidades interpessoais: Desenvolver habilidades de comunicação eficaz, empatia, resolução de conflitos e construção de relacionamentos saudáveis.",

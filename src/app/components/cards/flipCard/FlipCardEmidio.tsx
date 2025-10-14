@@ -9,7 +9,7 @@ export default function FlipCardEmidio({image,
   articles,
   agenda}: CardsProps) {
   return (
-    <article className="group [perspective:1000px] w-[400px] h-[400px] cursor-pointer">
+    <article className="group [perspective:1000px] m-auto w-[372px] h-[372px] md:w-[400px] md:h-[400px] cursor-pointer">
       <div className="relative rounded-lg border border-transparent 
         hover:border-letra2 hover:shadow-2xl 
         hover:bg-fundoCard2 w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">

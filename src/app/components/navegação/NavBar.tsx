@@ -65,7 +65,7 @@ function NavBar() {
             isOpen ? "block" : "hidden"
           } absolute  left-0 w-full bg-corSombra lg:bg-transparent lg:static lg:flex lg:items-center lg:justify-end`}
         >
-          <ul className="flex flex-col lg:flex-row gap-2 text-center text-fundo lg:text-corLetra font-fontPrincipal ">
+          <ul className="absolute w-full top-[31px] lg:top-0 bg-corSombra lg:bg-transparent lg:relative flex flex-col lg:flex-row gap-2 text-center text-fundo lg:text-corLetra font-fontPrincipal ">
             {NavFields.map((link) => (
               <li key={link.text}>
                 <Link href={link.href} className="linkNav">

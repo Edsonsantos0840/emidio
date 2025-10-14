@@ -68,13 +68,13 @@ input, select, textarea{
     @apply shadow-lg rounded-l-md w-full xl:group-hover:h-[100%] xl:group-hover:w-[350px]
   }
   .infoP {
-    @apply font-terceiraFont list-disc text-sm
+    @apply font-terceiraFont text-sm md:text-base
   }
   .respoFont {
     @apply font-terceiraFont lg:font-fontPrincipal
   }
   .impu {
-    @apply border-gray-300 border p-2 rounded-md h-[40px]  
+    @apply border-gray-300  p-2 rounded-md h-[40px]  
   }
  
 }

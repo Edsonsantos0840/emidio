@@ -18,11 +18,11 @@ export default function FlipCardInfo({image,
       role="region"
       aria-labelledby={`titulo-${title.replace(/\s+/g, "-").toLowerCase()}`}
     >
-      <div className="grid grid-cols-[1fr_2fr] rounded-lg border  
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] justify-center rounded-lg border  
         border-letra2 hover:shadow-2xl 
         hover:bg-fundoCard2">
         {/* Imagem com legenda semântica */}
-        <figure className="relative w-[390px] h-[390px] lrounded-xl shadow-xl ">
+        <figure className="relative md:m-auto w-[376px] h-[376px]  lrounded-xl shadow-xl ">
           <Image
             src={image}
             alt={`Imagem ilustrativa sobre ${title}`}
@@ -33,13 +33,13 @@ export default function FlipCardInfo({image,
           />
         </figure>
 
-        <article className="gap-1 p-1 w-full  ease-in group [perspective:1000px] cursor-pointer 
+        <article className="gap-1 py-4 p-1 lg:py-1 w-full  ease-in group [perspective:1000px] cursor-pointer 
         ">
           <div className="relative transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div className="relative overflow-hidden [backface-visibility:hidden]">
           <h2
             id={`titulo-${title.replace(/\s+/g, "-").toLowerCase()}`}
-            className="titulo text-center text-3xl pt-3 respoFont"
+            className="titulo text-center text-3xl pt-3 respoFont py-6"
           >
             {title}
           </h2>
@@ -47,7 +47,7 @@ export default function FlipCardInfo({image,
           <p className="  p-2 respoFont md:text-[1.1rem] lg:text-[1rem]">
             {tex}
           </p>
-          <div className="flex justify-between items-center my-4 pr-12 pl-2 font-terceiraFont">
+          <div className="flex justify-between items-center py-8 pr-12 pl-2 font-terceiraFont">
               <div>
               <strong className="flex gap-2 text-base opacity-80"><IoIosPerson size={23} />Milhões de casos</strong>
               <p className="flex flex-col opacity-60"> <strong className="text-base">No Mundo</strong></p>
@@ -79,7 +79,7 @@ export default function FlipCardInfo({image,
             aria-label={`Mais detalhes sobre ${title}`}
           >
             {articles.map((artigo, i) => (
-              <li key={i} className="iinfoP respoFont">
+              <li key={i} className="infoP respoFont md:text-justify">
                 {artigo}
               </li>
             ))}

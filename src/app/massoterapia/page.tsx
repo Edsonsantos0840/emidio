@@ -18,8 +18,8 @@ function Massoterapia() {
       />
 
       {/* Descrição sobre Massoterapia */} 
-      <section className="m-auto w-[98%] lg:w-[60%] p-1 py-8">
-        <h2 className="text-letra2 text-2xl md:text-3xl text-center respoFont">
+      <section className="m-auto w-[98%] lg:w-[60%] p-1">
+        <h2 className="text-letra2 text-2xl md:text-3xl text-center respoFont py-6">
           Afinal, o que é a Massoterapia?
         </h2>
         <p className="respoFont text-center md:text-[1.3rem] lg:text-[1rem]">
@@ -33,7 +33,7 @@ function Massoterapia() {
 
       {/* Modalidades de Massoterapia */}
       <section className="p-1 md:p-8 bg-fundoCard w-[90%] lg:w-[80%] rounded-md shadow-md group cursor-pointer transition-all ease-in-out duration-700">
-        <h2 className="text-letra2 text-2xl md:text-3xl text-center respoFont">
+        <h2 className="text-letra2 text-2xl md:text-3xl text-center respoFont py-6">
           Modalidades
         </h2>
 
