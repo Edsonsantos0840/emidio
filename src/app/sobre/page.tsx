@@ -16,12 +16,12 @@ function Sobre() {
       />
 
       <section
-        className="grid grid-cols-1 lg:grid-cols-2 w-full gap-2 mt-10 ease-in duration-300"
+        className="grid grid-cols-1 lg:grid-cols-2 w-[96%] m-auto gap-2 mt-10 ease-in duration-300"
         aria-label="Serviços oferecidos"
       >
         {/* Psicologia */}
         <article
-          className="rounded-lg shadow-lg transform transition duration-500 ease-in-out  p-4 alinha6 hover:scale-105 hover:border-2 border-letra2 "
+          className="rounded-lg transform transition duration-500 ease-in-out  p-4 alinha6 hover:scale-105 hover:border-2 border-letra2 "
           aria-labelledby="titulo-psicologia"
         >
           <h2
@@ -69,7 +69,7 @@ function Sobre() {
 
         {/* Massoterapia */}
         <article
-          className="rounded-lg p-4 shadow-lg alinha6 transform transition duration-500 ease-in-out hover:scale-105 hover:border-2 border-letra2"
+          className="rounded-lg p-4  alinha6 transform transition duration-500 ease-in-out hover:scale-105 hover:border-2 border-letra2"
           aria-labelledby="titulo-massoterapia"
         >
           <h2
